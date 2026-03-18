@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BeForBuild | Plateforme de gestion pour l'Immobilier et le BTP</title>
-  <meta name="description" content="Gérez vos documents, contrats et finances immobiliers sur une plateforme unique. ChantierDoc, ImmoContrat, ImmoRisk. Conçu par un expert terrain.">
-  <meta name="author" content="BeForBuild | Sébastien Mignot">
+  <title>BeForBuild | La plateforme digitale des promoteurs immobiliers</title>
+  <meta name="description" content="6 modules métier pour les promoteurs immobiliers : Foncier, Bilan, Contrats, Planning, Documents, Commercial. IA intégrée, une seule plateforme. Sur devis.">
+  <meta name="author" content="BeForBuild">
   <link rel="canonical" href="https://beforbuild.com">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="BeForBuild | Plateforme de gestion pour l'Immobilier et le BTP">
-  <meta property="og:description" content="Gérez vos documents, contrats et finances immobiliers sur une plateforme unique. ChantierDoc, ImmoContrat, ImmoRisk. Conçu par un expert terrain.">
+  <meta property="og:title" content="BeForBuild | La plateforme digitale des promoteurs immobiliers">
+  <meta property="og:description" content="6 modules métier pour les promoteurs immobiliers : Foncier, Bilan, Contrats, Planning, Documents, Commercial. IA intégrée. Sur devis.">
   <meta property="og:url" content="https://beforbuild.com">
   <meta property="og:image" content="https://beforbuild.com/photos/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -21,11 +21,11 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="BeForBuild | Plateforme de gestion pour l'Immobilier et le BTP">
-  <meta name="twitter:description" content="Gérez vos documents, contrats et finances immobiliers sur une plateforme unique. ChantierDoc, ImmoContrat, ImmoRisk. Conçu par un expert terrain.">
+  <meta name="twitter:title" content="BeForBuild | La plateforme digitale des promoteurs immobiliers">
+  <meta name="twitter:description" content="6 modules métier pour les promoteurs immobiliers : Foncier, Bilan, Contrats, Planning, Documents, Commercial. IA intégrée. Sur devis.">
   <meta name="twitter:image" content="https://beforbuild.com/photos/og-image.png">
 
-  <!-- SEO compléments -->
+  <!-- SEO -->
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#171717">
 
@@ -33,7 +33,7 @@
   <meta name="company-founded" content="2025">
   <meta name="company-founder" content="Sébastien Mignot">
   <meta name="expertise-years" content="17">
-  <meta name="business-focus" content="Real Estate & Construction Project Management SaaS">
+  <meta name="business-focus" content="Real Estate Development Project Management SaaS">
 
   <!-- Apple Touch Icon -->
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -53,7 +53,6 @@
       --bg: hsl(0 0% 100%);
       --accent: hsl(0 0% 9%);
       --accent-fg: hsl(0 0% 98%);
-      /* Brand accent - BeForBuild: #49D49D | SM AMO: #318ce7 | Buildoto: #dae706 */
       --brand: #49D49D;
       --brand-dark: #3ab888;
       --brand-light: #e8f9f2;
@@ -71,7 +70,7 @@
       -moz-osx-font-smoothing: grayscale;
     }
 
-    /* ── LAYOUT ── */
+    /* -- LAYOUT -- */
     .container {
       max-width: 1100px;
       margin: 0 auto;
@@ -92,7 +91,7 @@
       background-position: center;
     }
 
-    /* ── NAVBAR ── */
+    /* -- NAVBAR -- */
     .navbar {
       position: fixed;
       top: 0;
@@ -186,7 +185,7 @@
       border-bottom: none;
     }
 
-    /* ── TYPOGRAPHY ── */
+    /* -- TYPOGRAPHY -- */
     h1 {
       font-size: 48px;
       font-weight: 700;
@@ -204,7 +203,7 @@
 
     .muted { color: var(--muted); }
 
-    /* ── BUTTONS ── */
+    /* -- BUTTONS -- */
     .btn-primary {
       display: inline-flex;
       align-items: center;
@@ -254,29 +253,14 @@
       background: var(--brand-light);
     }
 
-    /* ── HERO ── */
+    /* -- HERO -- */
     .hero {
       padding: 120px 0 80px;
       background: var(--muted-bg);
     }
 
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 48px;
-      align-items: center;
-    }
-
     .hero-content {
-      max-width: 700px;
-    }
-
-    .hero-photo {
-      width: 280px;
-      height: 280px;
-      border-radius: 0;
-      object-fit: contain;
-      box-shadow: none;
+      max-width: 750px;
     }
 
     .hero h1 {
@@ -284,17 +268,18 @@
     }
 
     .hero-subtitle {
-      font-size: 28px;
-      font-weight: 400;
-      color: var(--muted);
-      line-height: 1.2;
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--brand-dark);
+      line-height: 1.3;
+      margin-top: 12px;
     }
 
     .hero-desc {
       color: var(--muted);
       font-size: 17px;
-      margin: 20px 0 12px;
-      max-width: 600px;
+      margin: 20px 0 8px;
+      max-width: 650px;
       line-height: 1.7;
     }
 
@@ -304,6 +289,7 @@
       max-width: 600px;
       line-height: 1.7;
       margin: 0 0 32px;
+      font-style: italic;
     }
 
     .hero-btns {
@@ -337,7 +323,7 @@
       line-height: 1.5;
     }
 
-    /* ── SECTION HEADERS ── */
+    /* -- SECTION HEADERS -- */
     .section-header {
       margin-bottom: 40px;
     }
@@ -352,8 +338,7 @@
       margin-top: 12px;
     }
 
-    .section-header[style*="text-align: center"] h2::after,
-    .section-header:has(+ .packs-grid) h2::after {
+    .section-header[style*="text-align: center"] h2::after {
       margin-left: auto;
       margin-right: auto;
     }
@@ -366,34 +351,58 @@
       line-height: 1.7;
     }
 
-    /* ── PARCOURS / EXPERTISE ── */
-    .parcours-grid {
+    /* -- PAIN POINTS 3x2 -- */
+    .painpoints-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    /* -- POURQUOI BEFORBUILD -- */
+    .why-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 48px;
       align-items: start;
     }
 
-    .parcours-text {
-      font-size: 15px;
-      line-height: 1.8;
-      color: var(--muted);
+    .why-arguments {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
     }
 
-    .parcours-text p {
-      margin: 0 0 16px;
+    .why-arg {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
     }
 
-    .parcours-text p:last-child {
-      margin: 0;
+    .why-arg-icon {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--brand-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    .parcours-text strong {
+    .why-arg-title {
+      font-size: 16px;
       font-weight: 600;
       color: var(--fg);
+      margin-bottom: 4px;
     }
 
-    .parcours-highlights {
+    .why-arg-desc {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .why-highlights {
       display: flex;
       flex-direction: column;
       gap: 16px;
@@ -421,156 +430,145 @@
       color: var(--fg);
     }
 
-    .logo-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 8px 0 4px;
-    }
-
-    .logo-row img {
-      height: 48px;
-      width: auto;
-      max-width: 130px;
-      object-fit: contain;
-    }
-
-    /* ── MODULES GRID ── */
-    .modules-grid {
+    /* -- MODULES 3x2 GRID -- */
+    .modules-grid-6 {
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 12px;
-      align-items: start;
-      max-width: 800px;
-      margin: 0 auto;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
 
-    .card {
+    .module-card {
       background: var(--bg);
       border: 1px solid var(--border);
       border-radius: 8px;
-      overflow: hidden;
+      padding: 28px 24px;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
 
-    .accordion-btn {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 18px 20px;
-      border: none;
-      background: transparent;
-      cursor: pointer;
-      font-family: inherit;
-      text-align: left;
-      font-size: 15px;
-      color: var(--fg);
-      transition: background 0.15s;
-    }
-    .accordion-btn:hover { background: hsl(0 0% 98.5%); }
-
-    .accordion-header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
+    .module-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
     }
 
-    .phase-num {
-      width: 32px;
-      height: 32px;
-      border-radius: 8px;
+    .module-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
       background: var(--brand-light);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 13px;
-      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .module-icon svg {
       color: var(--brand-dark);
-      flex-shrink: 0;
     }
 
-    .section-alt .phase-num {
-      background: var(--brand-light);
+    .module-name {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--fg);
+      margin-bottom: 2px;
     }
 
-    .accordion-title {
-      font-weight: 500;
-    }
-
-    .accordion-subtitle {
+    .module-subtitle {
       font-size: 13px;
       color: var(--muted);
-      font-weight: 400;
+      margin-bottom: 14px;
     }
 
-    .chevron {
-      flex-shrink: 0;
-      transition: transform 0.2s;
-    }
-
-    .accordion.open .chevron {
-      transform: rotate(180deg);
-    }
-
-    .accordion-body {
-      display: none;
-      padding: 0 20px 20px;
-      border-top: 1px solid var(--border);
-    }
-
-    .accordion.open .accordion-body {
-      display: block;
-    }
-
-    .accordion-desc {
-      font-size: 14px;
-      line-height: 1.7;
-      margin: 16px 0;
-      color: var(--muted);
-    }
-
-    .mission-list {
+    .module-features {
+      list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 6px;
+      margin-bottom: 14px;
     }
 
-    .mission-item {
+    .module-features li {
       display: flex;
       align-items: flex-start;
-      gap: 10px;
-      font-size: 14px;
+      gap: 8px;
+      font-size: 13px;
       line-height: 1.5;
+      color: var(--fg);
     }
 
-    .mission-item svg {
+    .module-features li svg {
       margin-top: 3px;
       flex-shrink: 0;
       color: var(--brand);
     }
 
-    .livrables {
-      margin-top: 16px;
-      padding: 12px 16px;
-      background: var(--muted-bg);
-      border-radius: 6px;
-    }
-
-    .section-alt .livrables {
-      background: var(--bg);
-    }
-
-    .livrables-label {
+    .module-benefit {
       font-size: 13px;
       font-weight: 600;
-      color: var(--muted);
+      color: var(--brand-dark);
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
     }
 
-    .livrables-text {
-      font-size: 13px;
+    /* -- IA SECTION -- */
+    .ia-section {
+      background: linear-gradient(135deg, hsl(0 0% 9%) 0%, hsl(155 30% 12%) 100%);
+      padding: 80px 0;
     }
 
-    /* ── PROCESS (Comment ça marche) ── */
+    .ia-section .section-header h2 {
+      color: var(--accent-fg);
+    }
+
+    .ia-section .section-header h2::after {
+      background: var(--brand);
+    }
+
+    .ia-section .section-header p {
+      color: hsl(0 0% 60%);
+    }
+
+    .ia-features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .ia-card {
+      background: hsl(0 0% 13%);
+      border: 1px solid hsl(0 0% 20%);
+      border-radius: 8px;
+      padding: 28px 24px;
+    }
+
+    .ia-card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: hsla(155, 60%, 45%, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+
+    .ia-card-icon svg {
+      color: var(--brand);
+    }
+
+    .ia-card-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--accent-fg);
+      margin-bottom: 8px;
+    }
+
+    .ia-card-desc {
+      font-size: 14px;
+      color: hsl(0 0% 60%);
+      line-height: 1.7;
+    }
+
+    /* -- PROCESS -- */
     .process-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -611,7 +609,7 @@
       line-height: 1.7;
     }
 
-    /* ── FORMULES / PRICING ── */
+    /* -- PRICING -- */
     .packs-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -619,6 +617,13 @@
       align-items: start;
       max-width: 500px;
       margin: 0 auto;
+    }
+
+    .card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
     }
 
     .pack-card {
@@ -640,10 +645,17 @@
     }
 
     .pack-price {
-      font-size: 15px;
-      font-weight: 500;
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--fg);
+      letter-spacing: -0.03em;
+      margin-bottom: 2px;
+    }
+
+    .pack-price-detail {
+      font-size: 14px;
       color: var(--muted);
-      margin-bottom: 12px;
+      margin-bottom: 16px;
     }
 
     .pack-desc {
@@ -673,49 +685,7 @@
       color: var(--brand);
     }
 
-    /* ── PRESTATIONS COMPLÉMENTAIRES ── */
-    .complementary-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
-
-    .complementary-card {
-      display: block;
-      padding: 32px;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      background: var(--bg);
-      text-decoration: none;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .complementary-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-    }
-
-    .complementary-logo {
-      height: 56px;
-      width: auto;
-      object-fit: contain;
-      margin-bottom: 16px;
-    }
-
-    .complementary-title {
-      font-size: 18px;
-      font-weight: 600;
-      color: var(--fg);
-      margin-bottom: 8px;
-    }
-
-    .complementary-desc {
-      font-size: 14px;
-      color: var(--muted);
-      line-height: 1.7;
-    }
-
-    /* ── FAQ ── */
+    /* -- FAQ -- */
     .faq-container {
       max-width: 800px;
       margin: 0 auto;
@@ -763,7 +733,16 @@
       display: block;
     }
 
-    /* ── CTA ── */
+    .chevron {
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+
+    .accordion.open .chevron {
+      transform: rotate(180deg);
+    }
+
+    /* -- CTA -- */
     .cta-section {
       background: linear-gradient(135deg, hsl(0 0% 9%) 0%, hsl(155 45% 14%) 100%);
       padding: 80px 0;
@@ -790,16 +769,7 @@
       line-height: 1.7;
     }
 
-    .cta-info {
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      flex-wrap: wrap;
-      font-size: 14px;
-      color: hsl(0 0% 60%);
-    }
-
-    /* ── LEGAL ── */
+    /* -- LEGAL -- */
     .legal-toggle {
       font-size: 14px;
       font-weight: 500;
@@ -824,7 +794,7 @@
       border-radius: 8px;
     }
 
-    /* ── FOOTER ── */
+    /* -- FOOTER -- */
     .site-footer {
       background: hsl(0 0% 6%);
       padding: 32px 0;
@@ -834,16 +804,7 @@
       line-height: 1.7;
     }
 
-    .site-footer a {
-      color: hsl(0 0% 62%);
-      text-decoration: none;
-    }
-
-    .site-footer a:hover {
-      color: hsl(0 0% 80%);
-    }
-
-    /* ── FADE-IN ── */
+    /* -- FADE-IN -- */
     .fade-in {
       opacity: 0;
       transform: translateY(20px);
@@ -855,16 +816,13 @@
       transform: translateY(0);
     }
 
-    /* ── PAIN POINTS GRID ── */
-    .painpoints-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-    }
-
-    /* ── RESPONSIVE ── */
+    /* -- RESPONSIVE -- */
     @media (max-width: 1024px) {
-      .packs-grid {
+      .modules-grid-6 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .ia-features-grid {
         grid-template-columns: 1fr;
         max-width: 500px;
       }
@@ -872,6 +830,15 @@
       .process-grid {
         grid-template-columns: 1fr;
         max-width: 500px;
+      }
+
+      .packs-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+      }
+
+      .painpoints-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
 
@@ -886,38 +853,32 @@
       h1 { font-size: 32px; }
       h2 { font-size: 24px; }
 
-      .painpoints-grid {
-        grid-template-columns: 1fr;
-      }
-
       .hero {
         padding: 88px 0 56px;
       }
 
-      .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 32px;
+      .hero .fade-in {
+        grid-template-columns: 1fr !important;
+        gap: 32px !important;
         text-align: center;
       }
 
-      .hero-grid .hero-content {
-        order: 2;
+      .hero .hero-content {
         text-align: left;
       }
 
-      .hero-grid .hero-photo-wrap {
-        order: 1;
+      .hero .hero-photo-wrap {
         display: flex;
         justify-content: center;
+        order: -1;
       }
 
-      .hero-photo {
-        width: 180px;
-        height: 180px;
+      .hero .hero-photo-wrap img {
+        width: 180px !important;
       }
 
       .hero-subtitle {
-        font-size: 20px;
+        font-size: 18px;
       }
 
       .hero-desc {
@@ -932,10 +893,6 @@
         grid-template-columns: 1fr;
         gap: 16px;
         margin-top: 40px;
-      }
-
-      .stat-card {
-        text-align: center;
       }
 
       .stat-val {
@@ -956,19 +913,26 @@
         margin-bottom: 24px;
       }
 
-      .parcours-grid {
+      .painpoints-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .why-grid {
         grid-template-columns: 1fr;
         gap: 24px;
       }
 
-      .logo-row {
-        flex-direction: column;
-        gap: 24px;
-        align-items: center;
+      .modules-grid-6 {
+        grid-template-columns: 1fr;
       }
 
-      .modules-grid {
+      .ia-features-grid {
         grid-template-columns: 1fr;
+        max-width: none;
+      }
+
+      .ia-section {
+        padding: 48px 0;
       }
 
       .process-grid {
@@ -979,10 +943,6 @@
       .packs-grid {
         grid-template-columns: 1fr;
         max-width: none;
-      }
-
-      .complementary-grid {
-        grid-template-columns: 1fr;
       }
 
       .hero-btns {
@@ -1001,13 +961,6 @@
       .cta-title {
         font-size: 24px;
       }
-
-      .cta-info {
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-      }
-
     }
   </style>
 
@@ -1021,25 +974,23 @@
         "name": "BeForBuild",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web",
-        "description": "Plateforme SaaS unifiée pour les professionnels de l'immobilier et du BTP. Gestion documentaire intelligente (ChantierDoc), gestion contractuelle (ImmoContrat) et suivi financier (ImmoRisk). Conçu par un expert terrain avec 17 ans d'expérience.",
+        "description": "Plateforme SaaS pour les promoteurs immobiliers. 6 modules métier : Foncier, Bilan, Contrats, Planning, Documents, Commercial. IA intégrée (RAG, OCR, agent contextuel).",
         "url": "https://beforbuild.com",
         "image": "https://beforbuild.com/photos/og-image.png",
         "author": { "@id": "#sebastien-mignot" },
         "offers": {
           "@type": "Offer",
-          "name": "Accès anticipé",
-          "price": "0",
-          "priceCurrency": "EUR",
-          "description": "Inscription gratuite en accès anticipé. Plateforme en lancement.",
-          "url": "https://app.beforbuild.com/register"
+          "name": "BeForBuild Pro",
+          "description": "Tarification sur devis, adaptée à votre portefeuille de projets. Tous les modules et l'IA inclus. Démonstration sur rendez-vous.",
+          "url": "https://beforbuild.com/#contact"
         },
         "featureList": [
-          "Gestion documentaire intelligente avec IA (RAG, OCR, chat contextuel)",
-          "Gestion contractuelle (contrats, OS, OF, templates, signatures)",
-          "Suivi financier et bilans promoteur (trésorerie, alertes, consolidation)",
-          "Multi-projets avec tableaux de bord temps réel",
-          "4 modes de vue documents (grille, liste, arbre latéral, arbre accordéon)",
-          "Upload ZIP avec extraction automatique"
+          "Foncier : prospection, pipeline, DVF, lettres d'intention, compromis",
+          "Bilan : bilan promoteur, trésorerie, alertes, simulations, OAT",
+          "Contrats : suivi contractuel, OS/OF, templates, signatures",
+          "Planning : Gantt, jalons, baselines, alertes planning",
+          "Documents : GED, RAG, OCR, chat IA contextuel",
+          "Commercial : grille de prix, CRM acquéreurs, documents commerciaux"
         ]
       },
       {
@@ -1047,14 +998,7 @@
         "@id": "#sebastien-mignot",
         "name": "Sébastien Mignot",
         "jobTitle": "Fondateur | BeForBuild",
-        "url": "https://beforbuild.com",
-        "knowsAbout": [
-          "Gestion de projets immobiliers",
-          "Promotion immobilière",
-          "Gestion documentaire BTP",
-          "Suivi financier immobilier",
-          "Intelligence artificielle appliquée à l'immobilier"
-        ]
+        "url": "https://beforbuild.com"
       },
       {
         "@type": "FAQPage",
@@ -1064,23 +1008,31 @@
             "name": "C'est quoi BeForBuild ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "BeForBuild est une plateforme SaaS unifiée pour les professionnels de l'immobilier et du BTP. Elle regroupe 3 modules : ChantierDoc (gestion documentaire intelligente avec IA), ImmoContrat (gestion contractuelle) et ImmoRisk (suivi financier et gestion des risques). Le tout sur une seule interface, conçue par un professionnel du terrain."
+              "text": "BeForBuild est une plateforme SaaS pour les promoteurs immobiliers. Elle couvre l'ensemble du cycle d'une opération avec 6 modules : Foncier, Bilan, Contrats, Planning, Documents et Commercial. Tous les modules sont interconnectés sur une seule plateforme, avec IA intégrée."
             }
           },
           {
             "@type": "Question",
-            "name": "Est-ce adapté à mon activité ?",
+            "name": "A qui s'adresse BeForBuild ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "BeForBuild est conçu pour tous les professionnels de l'immobilier et du BTP : promoteurs, foncières, entreprises de construction, gestionnaires de patrimoine, administrateurs de biens, AMO. Les modules sont indépendants, vous pouvez utiliser uniquement ceux qui correspondent à votre métier."
+              "text": "Aux promoteurs immobiliers de moins de 50 salariés : les indépendants, les PME, les sociétés de promotion qui gèrent encore leurs opérations sur Excel et des outils disjoints. BeForBuild remplace cette mosaïque par une plateforme unique."
             }
           },
           {
             "@type": "Question",
-            "name": "Comment fonctionne l'IA intégrée ?",
+            "name": "Comment fonctionne l'IA ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "ChantierDoc intègre une IA basée sur la technologie RAG (Retrieval-Augmented Generation). Concrètement : vous posez une question en langage naturel, l'IA cherche dans tous vos documents (PDF, plans, CR, marchés) et vous répond avec les sources. Elle inclut aussi l'OCR pour indexer automatiquement vos documents scannés."
+              "text": "L'IA de BeForBuild est contextuelle : elle connaît vos projets, vos documents, vos données. Elle combine RAG documentaire (recherche dans vos fichiers), OCR automatique (indexation des scans) et un agent transversal qui peut croiser les informations entre modules."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Combien coute BeForBuild ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tarification sur devis, adaptée à votre portefeuille de projets. Tous les modules et l'IA sont inclus. Démonstration personnalisée sur rendez-vous."
             }
           },
           {
@@ -1088,7 +1040,7 @@
             "name": "Mes données sont-elles sécurisées ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Oui. BeForBuild repose sur Supabase (PostgreSQL) pour la base de données, avec authentification sécurisée et Row Level Security. L'application est déployée sur Cloudflare, avec chiffrement HTTPS, headers de sécurité stricts et hébergement en Europe. Vos données restent les vôtres."
+              "text": "Oui. Serveurs hébergés en Europe, base de données PostgreSQL avec isolation par utilisateur (Row Level Security), chiffrement HTTPS, headers de sécurité stricts. Vos données restent les vôtres."
             }
           },
           {
@@ -1096,7 +1048,15 @@
             "name": "Puis-je utiliser un seul module ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Absolument. Les 3 modules (ChantierDoc, ImmoContrat, ImmoRisk) sont indépendants. Vous pouvez commencer avec un seul et activer les autres quand vous en avez besoin. Ils partagent la même base de projets, donc les données circulent naturellement entre eux."
+              "text": "Oui. Les 6 modules sont tous inclus dans l'abonnement, mais vous pouvez utiliser uniquement ceux dont vous avez besoin. Ils partagent la même base de projets, donc les données circulent naturellement entre eux quand vous les activez."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Est-ce que ça remplace Excel ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui, module par module. Votre bilan promoteur Excel devient le module Bilan avec formules automatiques et trésorerie en temps réel. Votre suivi de contrats devient le module Contrats avec alertes et signatures. Votre grille de prix Excel devient le module Commercial avec CRM acquéreurs."
             }
           }
         ]
@@ -1113,9 +1073,11 @@
       <a href="#" class="navbar-logo"><img src="photos/logo/beforbuild.webp" alt="BeForBuild" width="404" height="127"></a>
       <ul class="navbar-links">
         <li><a href="#modules">Modules</a></li>
+        <li><a href="#ia">IA</a></li>
         <li><a href="#process">Comment ça marche</a></li>
         <li><a href="#pricing">Tarifs</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="https://app.beforbuild.com" style="background: var(--brand); color: #fff; padding: 6px 16px; border-radius: 6px; font-weight: 600; transition: background 0.2s;">Se connecter</a></li>
       </ul>
       <button class="hamburger" aria-label="Menu" aria-expanded="false">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -1123,55 +1085,55 @@
     </div>
     <div class="mobile-menu">
       <a href="#modules">Modules</a>
+      <a href="#ia">IA</a>
       <a href="#process">Comment ça marche</a>
       <a href="#pricing">Tarifs</a>
       <a href="#contact">Contact</a>
+      <a href="https://app.beforbuild.com" style="background: var(--brand); color: #fff; padding: 10px 20px; border-radius: 6px; font-weight: 600;">Se connecter</a>
     </div>
   </nav>
 
   <!-- HERO -->
   <header class="hero">
     <div class="container">
-      <div class="hero-grid fade-in">
+      <div class="fade-in" style="display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: center;">
         <div class="hero-content">
-          <span class="badge">SaaS · Immobilier · BTP · IA</span>
-          <h1>
-            Pilotez vos projets immobiliers<br>
-            <span class="hero-subtitle">sur une plateforme pensée par un expert terrain</span>
-          </h1>
+          <span class="badge">Plateforme SaaS &middot; 6 modules &middot; IA intégrée</span>
+          <h1>La nouvelle infrastructure digitale pour la promotion immobilière</h1>
+          <p class="hero-subtitle">6 modules métier, une seule plateforme, l'IA en renfort.</p>
           <p class="hero-desc">
-            Documents, contrats, finances : tout est éparpillé entre Excel, emails et logiciels qui ne se parlent pas. J'ai conçu BeForBuild pour réunir l'essentiel en une seule plateforme, avec l'IA en renfort.
+            Foncier, Bilan, Contrats, Planning, Documents, Commercial &mdash; fini les Excel et les outils disjoints. Tout ce dont un promoteur a besoin pour piloter ses opérations, dans une seule plateforme.
           </p>
           <p class="hero-detail">
-            17 ans en tant que responsable de programmes immobiliers. J'ai vécu ces problèmes au quotidien. Alors j'ai construit l'outil que j'aurais voulu avoir.
+            Conçue par un promoteur avec 17 ans de terrain.
           </p>
           <div class="hero-btns">
-            <a href="https://app.beforbuild.com/register" class="btn-primary">
-              Essayer gratuitement
+            <a href="https://cal.com/sebastien-mignot/rendez-vous-decouverte-avec-beforbuild.com" class="btn-primary">
+              Demander une démo
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </a>
             <a href="#modules" class="btn-outline">
-              Voir les modules
+              Découvrir les modules
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
             </a>
           </div>
         </div>
         <div class="hero-photo-wrap">
-          <img src="photos/logo/beforbuild.webp" alt="BeForBuild | Plateforme de gestion pour l'Immobilier et le BTP" class="hero-photo" width="404" height="127" style="width: 280px; height: auto;">
+          <img src="photos/logo/beforbuild.webp" alt="BeForBuild" style="width: 280px; height: auto;">
         </div>
       </div>
       <div class="stats-grid fade-in">
         <div class="stat-card">
-          <div class="stat-val">3 modules</div>
-          <div class="stat-label">Documents, Contrats, Finances : une seule plateforme</div>
+          <div class="stat-val">6 modules</div>
+          <div class="stat-label">Foncier, Bilan, Contrats, Planning, Documents, Commercial</div>
         </div>
         <div class="stat-card">
           <div class="stat-val">IA intégrée</div>
-          <div class="stat-label">RAG, OCR, chat documentaire : l'IA au service du terrain</div>
+          <div class="stat-label">RAG documentaire, OCR automatique, agent contextuel</div>
         </div>
         <div class="stat-card">
-          <div class="stat-val">+17 ans</div>
-          <div class="stat-label">en promotion immobilière : résidentiel, commerces et coworking</div>
+          <div class="stat-val">Signature électronique</div>
+          <div class="stat-label">intégrée nativement dans tous vos processus contractuels</div>
         </div>
       </div>
     </div>
@@ -1183,46 +1145,101 @@
     <section class="section fade-in">
       <div class="container">
         <div class="section-header">
-          <h2>Ce qui ralentit votre activité au quotidien</h2>
-          <p>Des situations que je connais de l'intérieur, et que j'ai voulu résoudre avec BeForBuild.</p>
+          <h2>Des défis que nous connaissons bien</h2>
+          <p>En promotion immobilière, certains sujets méritent de meilleurs outils. BeForBuild les adresse un par un.</p>
         </div>
         <div class="painpoints-grid">
+
           <div class="process-card" style="display: flex; gap: 16px; align-items: flex-start;">
-            <div style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px; background: var(--muted-bg); display: flex; align-items: center; justify-content: center;">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--muted);"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+            <div style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px; background: var(--brand-light); display: flex; align-items: center; justify-content: center;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--brand-dark);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <div>
-              <div class="process-title" style="margin-bottom: 6px;">Des documents éparpillés partout</div>
-              <div class="process-desc">Plans dans les emails, CR sur le drive, marchés sur une clé USB, photos sur le téléphone. Personne ne sait où est la dernière version.</div>
+              <div class="process-title" style="margin-bottom: 6px;">Une prospection foncière difficile à structurer</div>
+              <div class="process-desc">Les données DVF sont dispersées, le suivi des opportunités repose sur la mémoire et les tableaux individuels.</div>
+              <ul style="margin-top: 8px; padding-left: 18px; font-size: 13px; color: var(--fg); line-height: 1.7;">
+                <li>Pipeline de terrains avec statuts</li>
+                <li>Enrichissement parcellaire automatique</li>
+                <li>Lettres d'intention et compromis</li>
+              </ul>
             </div>
           </div>
+
           <div class="process-card" style="display: flex; gap: 16px; align-items: flex-start;">
-            <div style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px; background: var(--muted-bg); display: flex; align-items: center; justify-content: center;">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--muted);"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <div style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px; background: var(--brand-light); display: flex; align-items: center; justify-content: center;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--brand-dark);"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
             </div>
             <div>
-              <div class="process-title" style="margin-bottom: 6px;">Un suivi contractuel sur Excel</div>
-              <div class="process-desc">Échéances oubliées, avenants non tracés, ordres de service perdus. Excel ne prévient pas quand une date critique approche.</div>
+              <div class="process-title" style="margin-bottom: 6px;">Des bilans promoteur longs à produire</div>
+              <div class="process-desc">La compilation des données financières prend un temps considérable, et la trésorerie reste difficile à suivre en temps réel.</div>
+              <ul style="margin-top: 8px; padding-left: 18px; font-size: 13px; color: var(--fg); line-height: 1.7;">
+                <li>Bilan normé avec formules automatiques</li>
+                <li>Trésorerie et appels de fonds</li>
+                <li>Simulations et alertes de dépassement</li>
+              </ul>
             </div>
           </div>
+
           <div class="process-card" style="display: flex; gap: 16px; align-items: flex-start;">
-            <div style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px; background: var(--muted-bg); display: flex; align-items: center; justify-content: center;">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--muted);"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px; background: var(--brand-light); display: flex; align-items: center; justify-content: center;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--brand-dark);"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
             </div>
             <div>
-              <div class="process-title" style="margin-bottom: 6px;">Du reporting manuel et chronophage</div>
-              <div class="process-desc">Compiler les données de 5 fichiers différents pour produire un bilan de comité prend des jours entiers. Et c'est à refaire chaque mois.</div>
+              <div class="process-title" style="margin-bottom: 6px;">Un suivi contractuel qui demande beaucoup de vigilance</div>
+              <div class="process-desc">Les échéances, avenants et ordres de service sont nombreux. Sans outil dédié, le risque d'oubli est réel.</div>
+              <ul style="margin-top: 8px; padding-left: 18px; font-size: 13px; color: var(--fg); line-height: 1.7;">
+                <li>Suivi des contrats, OS et OF</li>
+                <li>Alertes automatiques sur les échéances</li>
+                <li>Signature électronique intégrée</li>
+              </ul>
             </div>
           </div>
+
           <div class="process-card" style="display: flex; gap: 16px; align-items: flex-start;">
-            <div style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px; background: var(--muted-bg); display: flex; align-items: center; justify-content: center;">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--muted);"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <div style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px; background: var(--brand-light); display: flex; align-items: center; justify-content: center;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--brand-dark);"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
             <div>
-              <div class="process-title" style="margin-bottom: 6px;">Pas de vision globale multi-projets</div>
-              <div class="process-desc">Chaque projet vit dans son propre silo. Impossible d'avoir une vue consolidée de votre portefeuille sans des heures de travail manuel.</div>
+              <div class="process-title" style="margin-bottom: 6px;">Un planning difficile à partager</div>
+              <div class="process-desc">Chaque intervenant travaille avec sa propre version du planning. Synchroniser l'ensemble reste un défi au quotidien.</div>
+              <ul style="margin-top: 8px; padding-left: 18px; font-size: 13px; color: var(--fg); line-height: 1.7;">
+                <li>Gantt interactif avec dépendances</li>
+                <li>Jalons et baselines</li>
+                <li>Alertes planning automatiques</li>
+              </ul>
             </div>
           </div>
+
+          <div class="process-card" style="display: flex; gap: 16px; align-items: flex-start;">
+            <div style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px; background: var(--brand-light); display: flex; align-items: center; justify-content: center;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--brand-dark);"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div>
+              <div class="process-title" style="margin-bottom: 6px;">Des documents répartis sur plusieurs supports</div>
+              <div class="process-desc">Entre les emails, le drive et les échanges terrain, retrouver la bonne version d'un document prend du temps.</div>
+              <ul style="margin-top: 8px; padding-left: 18px; font-size: 13px; color: var(--fg); line-height: 1.7;">
+                <li>GED centralisée avec 4 modes de vue</li>
+                <li>Chat IA contextuel (RAG)</li>
+                <li>OCR et indexation automatique</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="process-card" style="display: flex; gap: 16px; align-items: flex-start;">
+            <div style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px; background: var(--brand-light); display: flex; align-items: center; justify-content: center;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--brand-dark);"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <div>
+              <div class="process-title" style="margin-bottom: 6px;">Une commercialisation qui mérite un vrai outil</div>
+              <div class="process-desc">Le suivi des acquéreurs, des réservations et de la grille de prix gagne à être centralisé pour ne rien laisser passer.</div>
+              <ul style="margin-top: 8px; padding-left: 18px; font-size: 13px; color: var(--fg); line-height: 1.7;">
+                <li>Grille de prix dynamique</li>
+                <li>Suivi réservations et actes</li>
+                <li>Documents commerciaux automatisés</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -1233,38 +1250,48 @@
         <div class="section-header">
           <h2>Pourquoi BeForBuild</h2>
         </div>
-        <div class="parcours-grid">
-          <div class="parcours-text">
-            <p>
-              <strong>Conçu par un professionnel du terrain.</strong> Pendant 17 ans, j'ai piloté des programmes immobiliers chez Nexity, Groupe Cardinal, Crédit Mutuel Immobilier. J'ai vécu ces problèmes au quotidien : documents introuvables, échéances oubliées, reporting interminable.
-            </p>
-            <p>
-              <strong>Pas un outil générique adapté à l'immobilier.</strong> BeForBuild a été pensé dès le départ pour les métiers de l'immobilier et du BTP. Chaque fonctionnalité répond à un besoin réel du terrain, pas à une spécification théorique.
-            </p>
-            <p>
-              <strong>L'IA au service de votre productivité.</strong> Recherche documentaire en langage naturel, OCR automatique, chat contextuel sur vos documents. L'intelligence artificielle est intégrée nativement, pas ajoutée en surcouche.
-            </p>
-          </div>
-          <div class="parcours-highlights">
-            <div class="highlight-item">
-              <div class="highlight-label">Technologies</div>
-              <div class="logo-row">
-                <img src="photos/logo/logiciels/claude.png" alt="Claude AI" title="Claude (Anthropic)" width="512" height="512" loading="lazy">
-                <img src="photos/logo/logiciels/n8n.webp" alt="n8n" title="n8n | Workflows" width="458" height="124" loading="lazy">
-                <img src="photos/logo/logiciels/supabase.webp" alt="Supabase" title="Supabase" width="2322" height="449" loading="lazy">
+        <div class="why-grid">
+          <div class="why-arguments">
+            <div class="why-arg">
+              <div class="why-arg-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--brand-dark);"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              </div>
+              <div>
+                <div class="why-arg-title">Pensée pour le métier, pas adaptée d'un outil générique</div>
+                <div class="why-arg-desc">Chaque fonctionnalité répond à un besoin réel de la promotion immobilière. Pas un ERP généraliste avec un thème immobilier.</div>
               </div>
             </div>
-            <div class="highlight-item">
-              <div class="highlight-label">Secteurs</div>
-              <div class="highlight-value">Promoteurs · Foncières · BTP · Gestionnaires de patrimoine · AMO</div>
+            <div class="why-arg">
+              <div class="why-arg-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--brand-dark);"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+              </div>
+              <div>
+                <div class="why-arg-title">L'IA qui connaît vos projets</div>
+                <div class="why-arg-desc">Pas un ChatGPT générique. L'IA de BeForBuild accède à vos documents, vos bilans, vos contrats. Elle comprend le contexte de vos opérations.</div>
+              </div>
             </div>
+            <div class="why-arg">
+              <div class="why-arg-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--brand-dark);"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div>
+                <div class="why-arg-title">Conçue par un promoteur, pour les promoteurs</div>
+                <div class="why-arg-desc">17 ans chez Nexity, Groupe Cardinal, Crédit Mutuel Immobilier. Chaque écran, chaque workflow est né d'un besoin vécu sur le terrain.</div>
+              </div>
+            </div>
+          </div>
+          <div class="why-highlights">
             <div class="highlight-item">
-              <div class="highlight-label">Stack</div>
-              <div class="highlight-value">React · TypeScript · Supabase · Cloudflare · IA (RAG + OCR)</div>
+              <div class="highlight-label">Secteur cible</div>
+              <div class="highlight-value">Promoteurs immobiliers &middot; PME &lt; 50 salariés &middot; Indépendants</div>
             </div>
             <div class="highlight-item">
               <div class="highlight-label">Sécurité</div>
-              <div class="highlight-value">PostgreSQL · Row Level Security · HTTPS · Hébergement européen</div>
+              <div class="highlight-value">Serveurs EU &middot; PostgreSQL &middot; Row Level Security &middot; Chiffrement HTTPS</div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-label">Cloud</div>
+              <div class="highlight-value">SaaS 100% web &middot; Rien à installer &middot; Accessible partout &middot; Mises à jour automatiques</div>
             </div>
           </div>
         </div>
@@ -1275,104 +1302,149 @@
     <section id="modules" class="section section-modules-bg fade-in">
       <div class="container">
         <div class="section-header">
-          <h2>Les 3 modules</h2>
+          <h2>Les 6 modules</h2>
           <p>
-            Une plateforme, trois métiers couverts. Chaque module fonctionne indépendamment, ou ensemble pour une vision à 360° de vos projets.
+            Du foncier à la commercialisation : chaque étape de l'opération est couverte. Les modules fonctionnent ensemble sur une base de projets partagée.
           </p>
         </div>
 
-        <div class="modules-grid accordion-group" data-group="modules">
+        <div class="modules-grid-6">
 
-          <!-- ChantierDoc -->
-          <div class="card accordion">
-            <button class="accordion-btn" aria-expanded="false">
-              <div class="accordion-header">
-                <span class="phase-num">01</span>
-                <div>
-                  <span class="accordion-title">ChantierDoc</span>
-                  <div class="accordion-subtitle">Gestion documentaire intelligente pour le BTP</div>
-                </div>
-              </div>
-              <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="accordion-body">
-              <p class="accordion-desc">Centralisez tous vos documents de chantier et interrogez-les en langage naturel grâce à l'IA. Fini les heures perdues à chercher un plan ou un compte-rendu.</p>
-              <div class="mission-list">
-                <div class="mission-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>4 modes de vue : grille, liste, arbre latéral, arbre accordéon</span></div>
-                <div class="mission-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Drag-and-drop pour organiser documents et dossiers</span></div>
-                <div class="mission-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Chat IA avec contexte documentaire (RAG) : posez vos questions, obtenez des réponses sourcées</span></div>
-                <div class="mission-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Upload ZIP avec extraction et classement automatique</span></div>
-                <div class="mission-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>OCR et indexation automatique de tous vos documents</span></div>
-              </div>
-              <div class="livrables">
-                <span class="livrables-label">En résumé : </span>
-                <span class="livrables-text">Tous vos documents au même endroit · Recherche instantanée par l'IA · Zéro document perdu</span>
-              </div>
+          <!-- Foncier -->
+          <div class="module-card">
+            <div class="module-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
+            <div class="module-name">Foncier</div>
+            <div class="module-subtitle">Prospection &amp; acquisition foncière</div>
+            <ul class="module-features">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Pipeline de terrains avec statuts</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Données DVF et enrichissement parcelle</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Lettres d'intention et compromis</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Fiche commune et conditions suspensives</span></li>
+            </ul>
+            <div class="module-benefit">Structurez votre prospection, ne ratez plus une opportunité.</div>
           </div>
 
-          <!-- ImmoContrat -->
-          <div class="card accordion">
-            <button class="accordion-btn" aria-expanded="false">
-              <div class="accordion-header">
-                <span class="phase-num">02</span>
-                <div>
-                  <span class="accordion-title">ImmoContrat</span>
-                  <div class="accordion-subtitle">Gestion contractuelle pour l'immobilier</div>
-                </div>
-              </div>
-              <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="accordion-body">
-              <p class="accordion-desc">Suivez vos contrats, phases, ordres de service et facturations en un seul endroit. Ne ratez plus jamais une échéance contractuelle.</p>
-              <div class="mission-list">
-                <div class="mission-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Suivi complet des contrats et de leurs phases</span></div>
-                <div class="mission-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Gestion des ordres de service (OS) et ordres de facturation (OF)</span></div>
-                <div class="mission-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Templates et clauses réutilisables pour gagner du temps</span></div>
-                <div class="mission-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Circuits de validation et signatures dématérialisées</span></div>
-                <div class="mission-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Alertes automatiques sur les échéances et jalons critiques</span></div>
-              </div>
-              <div class="livrables">
-                <span class="livrables-label">En résumé : </span>
-                <span class="livrables-text">0 échéance oubliée · Traçabilité complète · Contrats sous contrôle</span>
-              </div>
+          <!-- Bilan -->
+          <div class="module-card">
+            <div class="module-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
             </div>
+            <div class="module-name">Bilan</div>
+            <div class="module-subtitle">Suivi financier &amp; bilan promoteur</div>
+            <ul class="module-features">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Bilan promoteur normé (recettes, dépenses, marge)</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Trésorerie et appels de fonds</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Simulations et scénarios</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Alertes de dépassement et suivi OAT</span></li>
+            </ul>
+            <div class="module-benefit">Fini les bilans Excel. Visibilité financière en temps réel.</div>
           </div>
 
-          <!-- ImmoRisk -->
-          <div class="card accordion">
-            <button class="accordion-btn" aria-expanded="false">
-              <div class="accordion-header">
-                <span class="phase-num">03</span>
-                <div>
-                  <span class="accordion-title">ImmoRisk</span>
-                  <div class="accordion-subtitle">Suivi financier et gestion des risques</div>
-                </div>
-              </div>
-              <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="accordion-body">
-              <p class="accordion-desc">Bilans promoteur, trésorerie, alertes de dépassement : pilotez la santé financière de vos opérations en temps réel. Fini les bilans Excel qui ne sont jamais à jour.</p>
-              <div class="mission-list">
-                <div class="mission-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Bilans financiers promoteur avec postes, blocs et formules automatiques</span></div>
-                <div class="mission-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Suivi de trésorerie et appels de fonds</span></div>
-                <div class="mission-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Alertes automatiques (dépassements budgétaires, échéances critiques)</span></div>
-                <div class="mission-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Tableaux de bord financiers temps réel avec ratios clés</span></div>
-                <div class="mission-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Comparaison initial / engagé / réalisé et snapshots historiques</span></div>
-                <div class="mission-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Consolidation multi-projets et vue portefeuille</span></div>
-              </div>
-              <div class="livrables">
-                <span class="livrables-label">En résumé : </span>
-                <span class="livrables-text">100% visibilité financière · Bilans toujours à jour · Alertes proactives</span>
-              </div>
+          <!-- Contrats -->
+          <div class="module-card">
+            <div class="module-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
             </div>
+            <div class="module-name">Contrats</div>
+            <div class="module-subtitle">Gestion contractuelle</div>
+            <ul class="module-features">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Suivi des contrats, phases et avenants</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Ordres de service (OS) et ordres de facturation (OF)</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Templates et clauses réutilisables</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Signatures dématérialisées</span></li>
+            </ul>
+            <div class="module-benefit">Zero échéance oubliee. Tracabilite complete.</div>
+          </div>
+
+          <!-- Planning -->
+          <div class="module-card">
+            <div class="module-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div class="module-name">Planning</div>
+            <div class="module-subtitle">Planification &amp; suivi</div>
+            <ul class="module-features">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Diagramme de Gantt interactif</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Jalons et dépendances</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Baselines et comparaison de versions</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Alertes planning automatiques</span></li>
+            </ul>
+            <div class="module-benefit">Vision partagée du planning. Plus de jalons oubliés.</div>
+          </div>
+
+          <!-- Documents -->
+          <div class="module-card">
+            <div class="module-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div class="module-name">Documents</div>
+            <div class="module-subtitle">GED intelligente avec IA</div>
+            <ul class="module-features">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>4 modes de vue (grille, liste, arbre, accordeon)</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Chat IA contextuel (RAG)</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>OCR et indexation automatique</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Upload ZIP avec classement auto</span></li>
+            </ul>
+            <div class="module-benefit">Tous vos documents au même endroit. Recherche instantanée par l'IA.</div>
+          </div>
+
+          <!-- Commercial -->
+          <div class="module-card">
+            <div class="module-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="module-name">Commercial</div>
+            <div class="module-subtitle">Ventes &amp; CRM acquéreurs</div>
+            <ul class="module-features">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Grille de prix dynamique</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Suivi des réservations et actes</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Documents commerciaux automatisés</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Simulations financières acquéreurs</span></li>
+            </ul>
+            <div class="module-benefit">Pilotez vos ventes. Fini la grille Excel.</div>
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- COMMENT ÇA MARCHE -->
+    <!-- SECTION IA -->
+    <section id="ia" class="ia-section fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2>L'IA qui connaît vos projets</h2>
+          <p>Pas une IA générique. Une IA contextuelle qui accède à vos documents, vos bilans, vos contrats &mdash; et qui comprend la promotion immobilière.</p>
+        </div>
+
+        <div class="ia-features-grid">
+          <div class="ia-card">
+            <div class="ia-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <div class="ia-card-title">RAG documentaire</div>
+            <div class="ia-card-desc">Posez une question en langage naturel, l'IA cherche dans tous vos documents (PDF, plans, CR, marchés) et répond avec les sources. Fini les heures à chercher un document.</div>
+          </div>
+          <div class="ia-card">
+            <div class="ia-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+            <div class="ia-card-title">OCR automatique</div>
+            <div class="ia-card-desc">Chaque document uploadé est automatiquement indexé par OCR. Même vos scans, fax et photos de chantier deviennent cherchables instantanément.</div>
+          </div>
+          <div class="ia-card">
+            <div class="ia-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="ia-card-title">Agent IA transversal</div>
+            <div class="ia-card-desc">L'IA croise les informations entre modules : bilans, contrats, planning, documents. Elle vous alerte, synthétise, et vous aide à prendre les bonnes décisions.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMENT CA MARCHE -->
     <section id="process" class="section section-alt fade-in">
       <div class="container">
         <div class="section-header">
@@ -1381,24 +1453,39 @@
         <div class="process-grid">
           <div class="process-card">
             <div class="process-num">01</div>
-            <div class="process-title">Inscription gratuite</div>
-            <div class="process-desc">Créez votre compte en 30 secondes. Pas de carte bancaire, pas d'engagement. Vous accédez immédiatement à la plateforme.</div>
+            <div class="process-title">Demandez une démo</div>
+            <div class="process-desc">Prenez rendez-vous pour une démonstration personnalisée. On vous présente la plateforme sur vos cas concrets.</div>
+            <ul style="margin-top: 8px; padding-left: 18px; font-size: 13px; color: var(--fg); line-height: 1.7;">
+              <li>30 minutes, sans engagement</li>
+              <li>Présentation sur vos projets réels</li>
+              <li>Réponses à toutes vos questions</li>
+            </ul>
           </div>
           <div class="process-card">
             <div class="process-num">02</div>
-            <div class="process-title">Configurez vos projets</div>
-            <div class="process-desc">Importez vos documents, paramétrez vos contrats, créez vos bilans. La plateforme s'adapte à votre organisation existante.</div>
+            <div class="process-title">Importez vos projets</div>
+            <div class="process-desc">Documents, bilans, paramétrage : la plateforme s'adapte à votre organisation existante. Migrez à votre rythme.</div>
+            <ul style="margin-top: 8px; padding-left: 18px; font-size: 13px; color: var(--fg); line-height: 1.7;">
+              <li>Upload de documents par lot (ZIP)</li>
+              <li>Saisie ou import des bilans</li>
+              <li>Paramétrage des intervenants</li>
+            </ul>
           </div>
           <div class="process-card">
             <div class="process-num">03</div>
-            <div class="process-title">Pilotez votre activité</div>
-            <div class="process-desc">Tableaux de bord temps réel, alertes automatiques, IA à votre service. Concentrez-vous sur les décisions, pas sur la compilation de données.</div>
+            <div class="process-title">Pilotez vos opérations</div>
+            <div class="process-desc">Dashboards temps réel, alertes automatiques, IA à votre service. Concentrez-vous sur les décisions, pas sur la compilation.</div>
+            <ul style="margin-top: 8px; padding-left: 18px; font-size: 13px; color: var(--fg); line-height: 1.7;">
+              <li>Tableaux de bord en temps réel</li>
+              <li>Alertes proactives par module</li>
+              <li>IA contextuelle à la demande</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- TARIFICATION -->
+    <!-- PRICING -->
     <section id="pricing" class="section fade-in">
       <div class="container">
         <div class="section-header" style="text-align: center;">
@@ -1408,51 +1495,32 @@
         <div class="packs-grid" style="max-width: 500px;">
 
           <div class="card pack-card highlight">
-            <span class="pack-name">Accès anticipé</span>
-            <div class="pack-price">Gratuit : places limitées</div>
-            <div class="pack-desc">BeForBuild est en phase de lancement. Inscrivez-vous dès maintenant pour bénéficier d'un accès gratuit et contribuer à façonner le produit.</div>
+            <span class="pack-name">BeForBuild Pro</span>
+            <div class="pack-price">Sur devis</div>
+            <div class="pack-price-detail">Tarification adaptée à votre portefeuille de projets</div>
+            <div class="pack-desc">Tous les modules, toute l'IA, sans limite. Un seul abonnement pour piloter l'ensemble de vos opérations.</div>
             <div class="pack-includes">
-              <div class="pack-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Accès complet aux 3 modules</span></div>
-              <div class="pack-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>IA documentaire incluse</span></div>
-              <div class="pack-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Projets illimités</span></div>
-              <div class="pack-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Support prioritaire du fondateur</span></div>
-              <div class="pack-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Vos retours façonnent le produit</span></div>
+              <div class="pack-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>6 modules inclus (Foncier, Bilan, Contrats, Planning, Documents, Commercial)</span></div>
+              <div class="pack-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>IA intégrée (RAG, OCR, agent contextuel)</span></div>
+              <div class="pack-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Stockage documents illimité</span></div>
+              <div class="pack-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Utilisateurs illimités par projet</span></div>
+              <div class="pack-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Support prioritaire</span></div>
             </div>
             <div style="margin-top: 20px;">
-              <a href="https://app.beforbuild.com/register" class="btn-primary" style="width: 100%; justify-content: center;">
-                S'inscrire gratuitement
+              <a href="https://cal.com/sebastien-mignot/rendez-vous-decouverte-avec-beforbuild.com" class="btn-primary" style="width: 100%; justify-content: center;">
+                Demander une démo
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
               </a>
             </div>
+            <p style="text-align: center; font-size: 13px; color: var(--muted); margin-top: 12px;">Démonstration personnalisée sur rendez-vous</p>
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- PRESTATIONS COMPLÉMENTAIRES -->
-    <section class="section section-alt fade-in">
-      <div class="container">
-        <div class="section-header">
-          <h2>Prestations complémentaires</h2>
-        </div>
-        <div class="complementary-grid">
-          <a href="https://buildoto.com" target="_blank" rel="noopener" class="complementary-card">
-            <img src="photos/logo/buildoto.webp" alt="Buildoto" class="complementary-logo" width="474" height="220" loading="lazy">
-            <div class="complementary-title">Audit & Automatisation sur mesure</div>
-            <div class="complementary-desc">Audit de vos processus métier et développement d'automatisations sur mesure. Agents IA, workflows automatisés, RAG documentaire. Finançable via Bpifrance.</div>
-          </a>
-          <a href="https://sebastien-mignot.com" target="_blank" rel="noopener" class="complementary-card">
-            <img src="photos/logo/SM_AMO.webp" alt="Sébastien Mignot | AMO" class="complementary-logo" width="36" height="37" loading="lazy">
-            <div class="complementary-title">Assistance à Maîtrise d'Ouvrage</div>
-            <div class="complementary-desc">Conseil et assistance opérationnelle aux promoteurs immobiliers, du montage d'opération à la livraison. +17 ans d'expérience terrain.</div>
-          </a>
-        </div>
-      </div>
-    </section>
-
     <!-- FAQ -->
-    <section class="section fade-in">
+    <section class="section section-alt fade-in">
       <div class="container">
         <div class="faq-container">
           <div class="section-header" style="text-align: center;">
@@ -1466,23 +1534,31 @@
                 <span class="faq-q">C'est quoi BeForBuild ?</span>
                 <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
               </button>
-              <div class="faq-body">BeForBuild est une plateforme SaaS unifiée pour les professionnels de l'immobilier et du BTP. Elle regroupe 3 modules complémentaires : <strong>ChantierDoc</strong> (gestion documentaire intelligente avec IA), <strong>ImmoContrat</strong> (gestion contractuelle) et <strong>ImmoRisk</strong> (suivi financier et gestion des risques). Le tout sur une seule interface, conçue par un professionnel du terrain.</div>
+              <div class="faq-body">BeForBuild est une plateforme SaaS pour les promoteurs immobiliers. Elle couvre l'ensemble du cycle d'une opération avec 6 modules : <strong>Foncier</strong> (prospection, pipeline), <strong>Bilan</strong> (suivi financier, trésorerie), <strong>Contrats</strong> (gestion contractuelle, signatures), <strong>Planning</strong> (Gantt, jalons), <strong>Documents</strong> (GED avec IA) et <strong>Commercial</strong> (grille de prix, CRM). Tous les modules sont interconnectés sur une seule plateforme.</div>
             </div>
 
             <div class="card accordion">
               <button class="faq-btn" aria-expanded="false">
-                <span class="faq-q">Est-ce adapté à mon activité ?</span>
+                <span class="faq-q">A qui s'adresse BeForBuild ?</span>
                 <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
               </button>
-              <div class="faq-body">BeForBuild est conçu pour tous les professionnels de l'immobilier et du BTP : promoteurs, foncières, entreprises de construction, gestionnaires de patrimoine, administrateurs de biens, AMO. Les modules sont indépendants, vous pouvez utiliser uniquement ceux qui correspondent à votre métier.</div>
+              <div class="faq-body">Aux promoteurs immobiliers de moins de 50 salariés : les indépendants, les PME, les sociétés de promotion qui gèrent encore leurs opérations sur Excel et des outils disjoints. BeForBuild remplace cette mosaïque par une plateforme unique, pensée pour le métier.</div>
             </div>
 
             <div class="card accordion">
               <button class="faq-btn" aria-expanded="false">
-                <span class="faq-q">Comment fonctionne l'IA intégrée ?</span>
+                <span class="faq-q">Comment fonctionne l'IA ?</span>
                 <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
               </button>
-              <div class="faq-body">ChantierDoc intègre une IA basée sur la technologie RAG (Retrieval-Augmented Generation). Concrètement : vous posez une question en langage naturel, l'IA cherche dans tous vos documents (PDF, plans, CR, marchés) et vous répond avec les sources. Elle inclut aussi l'OCR pour indexer automatiquement vos documents scannés.</div>
+              <div class="faq-body">L'IA de BeForBuild est contextuelle : elle connaît vos projets, vos documents, vos données. Elle combine le <strong>RAG documentaire</strong> (recherche dans vos fichiers en langage naturel, avec les sources), l'<strong>OCR automatique</strong> (indexation des scans et photos) et un <strong>agent transversal</strong> qui croise les informations entre modules pour vous aider à prendre les bonnes décisions.</div>
+            </div>
+
+            <div class="card accordion">
+              <button class="faq-btn" aria-expanded="false">
+                <span class="faq-q">Combien ça coûte ?</span>
+                <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-body"><strong>Tarification sur devis</strong>, adaptée à votre portefeuille de projets. Tous les modules et l'IA sont inclus. L'accès se fait sur démonstration et rendez-vous.</div>
             </div>
 
             <div class="card accordion">
@@ -1490,7 +1566,7 @@
                 <span class="faq-q">Mes données sont-elles sécurisées ?</span>
                 <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
               </button>
-              <div class="faq-body">Oui. BeForBuild repose sur Supabase (PostgreSQL) pour la base de données, avec authentification sécurisée et Row Level Security. Chaque utilisateur n'accède qu'à ses propres données. L'application est déployée sur Cloudflare, avec chiffrement HTTPS, headers de sécurité stricts et hébergement en Europe. Vos données restent les vôtres.</div>
+              <div class="faq-body">Oui. Serveurs hébergés en Europe, base de données PostgreSQL avec isolation par utilisateur (Row Level Security), chiffrement HTTPS et headers de sécurité stricts. Chaque promoteur n'accède qu'à ses propres données. Vos données restent les vôtres.</div>
             </div>
 
             <div class="card accordion">
@@ -1498,7 +1574,15 @@
                 <span class="faq-q">Puis-je utiliser un seul module ?</span>
                 <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
               </button>
-              <div class="faq-body">Absolument. Les 3 modules (ChantierDoc, ImmoContrat, ImmoRisk) sont indépendants. Vous pouvez commencer avec un seul et activer les autres quand vous en avez besoin. Ils partagent la même base de projets, donc les données circulent naturellement entre eux quand vous les utilisez ensemble.</div>
+              <div class="faq-body">Oui. Les 6 modules sont tous inclus dans l'abonnement, mais vous pouvez utiliser uniquement ceux dont vous avez besoin. Ils partagent la même base de projets, donc les données circulent naturellement entre eux quand vous les activez.</div>
+            </div>
+
+            <div class="card accordion">
+              <button class="faq-btn" aria-expanded="false">
+                <span class="faq-q">Est-ce que ça remplace Excel ?</span>
+                <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-body">Oui, module par module. Votre bilan promoteur Excel devient le module <strong>Bilan</strong> avec formules automatiques et trésorerie en temps réel. Votre suivi de contrats devient le module <strong>Contrats</strong> avec alertes et signatures. Votre grille de prix Excel devient le module <strong>Commercial</strong> avec CRM acquéreurs. Migrez à votre rythme, un module à la fois.</div>
             </div>
 
           </div>
@@ -1510,13 +1594,13 @@
     <section id="contact" class="cta-section fade-in">
       <div class="container">
         <div class="cta-inner">
-          <h2 class="cta-title">Simplifiez la gestion de vos projets immobiliers</h2>
+          <h2 class="cta-title">Rejoignez les promoteurs qui digitalisent leurs opérations</h2>
           <p class="cta-desc">
-            Inscrivez-vous gratuitement et découvrez comment BeForBuild peut transformer votre quotidien. Une plateforme, trois modules, zéro prise de tête.
+            Réservez une démonstration personnalisée. 6 modules, IA intégrée, signature électronique.
           </p>
           <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
-            <a href="https://app.beforbuild.com/register" class="btn-primary">
-              Essayer gratuitement
+            <a href="https://cal.com/sebastien-mignot/rendez-vous-decouverte-avec-beforbuild.com" class="btn-primary">
+              Demander une démo
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </a>
             <a href="mailto:contact@beforbuild.com?subject=Prise%20de%20contact%20BeForBuild" class="btn-outline" style="border-color: hsl(0 0% 40%); color: var(--accent-fg);">
@@ -1528,7 +1612,7 @@
       </div>
     </section>
 
-    <!-- INFORMATIONS LÉGALES -->
+    <!-- INFORMATIONS LEGALES -->
     <section style="background: hsl(0 0% 9%); padding: 0 0 48px;">
       <div class="container">
         <details>
@@ -1538,10 +1622,10 @@
           </summary>
           <div class="legal-content">
             <p style="margin: 0 0 12px;">
-              <strong style="color: var(--accent-fg);">Éditeur du site</strong> | BeForBuild · Directeur de la publication : Sébastien Mignot · Contact : contact@beforbuild.com · Société en cours d'immatriculation en France.
+              <strong style="color: var(--accent-fg);">Éditeur du site</strong> | BeForBuild &middot; Directeur de la publication : Sébastien Mignot &middot; Contact : contact@beforbuild.com &middot; Société en cours d'immatriculation en France.
             </p>
             <p style="margin: 0 0 12px;">
-              <strong style="color: var(--accent-fg);">Hébergement</strong> | Cloudflare Pages · <a href="https://www.cloudflare.com/" style="color: hsl(0 0% 70%);" target="_blank" rel="noopener">cloudflare.com</a>
+              <strong style="color: var(--accent-fg);">Hébergement</strong> | Cloudflare Pages &middot; <a href="https://www.cloudflare.com/" style="color: hsl(0 0% 70%);" target="_blank" rel="noopener">cloudflare.com</a>
             </p>
             <p style="margin: 0; font-size: 13px;">
               <strong style="color: var(--accent-fg);">Propriété intellectuelle</strong> | L'ensemble des contenus présents sur ce site (textes, images, logos, etc.) sont la propriété exclusive de BeForBuild, sauf mention contraire. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site est interdite sans autorisation écrite préalable.
@@ -1558,9 +1642,7 @@
     <div class="container">
       BeForBuild | Société en cours d'immatriculation en France
       <br>
-      <a href="https://buildoto.com" target="_blank" rel="noopener">buildoto.com</a> · <a href="https://sebastien-mignot.com" target="_blank" rel="noopener">sebastien-mignot.com</a>
-      <br>
-      © 2025 BeForBuild. Tous droits réservés.
+      &copy; 2025 BeForBuild. Tous droits réservés.
     </div>
   </footer>
 
@@ -1604,7 +1686,7 @@
     var deferInit = function() {
       // Accordion logic - one open at a time per group
       document.querySelectorAll('.accordion-group').forEach(function(group) {
-        group.querySelectorAll('.accordion-btn, .faq-btn').forEach(function(btn) {
+        group.querySelectorAll('.faq-btn').forEach(function(btn) {
           btn.addEventListener('click', function() {
             var item = btn.closest('.accordion');
             var wasOpen = item.classList.contains('open');

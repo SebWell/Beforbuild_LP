@@ -1,8 +1,8 @@
-# BeForBuild — Plateforme de gestion pour l'Immobilier et le BTP
+# BeForBuild — La plateforme digitale pour la promotion immobilière
 
-> Gérez vos documents, contrats et finances immobiliers sur une plateforme unique. ChantierDoc, ImmoContrat, ImmoRisk. Conçu par un expert terrain.
+> 6 modules métier pour les promoteurs immobiliers : Foncier, Bilan, Contrats, Planning, Documents, Commercial. IA intégrée, signature électronique, une seule plateforme.
 
-BeForBuild est une plateforme SaaS unifiée pour les professionnels de l'immobilier et du BTP. Elle regroupe 3 modules complémentaires : ChantierDoc (gestion documentaire intelligente avec IA), ImmoContrat (gestion contractuelle) et ImmoRisk (suivi financier et gestion des risques). Créée par Sébastien Mignot, fort de 17 ans d'expérience en promotion immobilière (Nexity, Groupe Cardinal, Crédit Mutuel Immobilier). Société en cours d'immatriculation en France.
+BeForBuild est une plateforme SaaS pour les promoteurs immobiliers. Elle couvre l'ensemble du cycle d'une opération avec 6 modules interconnectés : Foncier, Bilan, Contrats, Planning, Documents et Commercial. Créée par Sébastien Mignot, fort de 17 ans d'expérience en promotion immobilière (Nexity, Groupe Cardinal, Crédit Mutuel Immobilier). Société en cours d'immatriculation en France.
 
 ## Profil
 
@@ -15,53 +15,57 @@ BeForBuild est une plateforme SaaS unifiée pour les professionnels de l'immobil
 
 ## Positionnement
 
-Une plateforme, trois modules, pensée par un expert terrain. Documents, contrats et finances immobiliers réunis en un seul outil, avec l'IA en renfort.
+Une plateforme, six modules métier, pensée par un promoteur pour les promoteurs. Du foncier à la commercialisation, tout est réuni en un seul outil, avec l'IA en renfort et la signature électronique intégrée.
 
 ## Cible
 
-Tout professionnel de l'immobilier et du BTP : promoteurs, gestionnaires de patrimoine, foncières, entreprises BTP, administrateurs de biens, AMO.
+Promoteurs immobiliers de moins de 50 salariés : indépendants, PME, sociétés de promotion qui pilotent encore leurs opérations sur Excel et des outils disjoints.
 
 ## Modules
 
-### ChantierDoc — Gestion documentaire intelligente pour le BTP
-Centralisez tous vos documents de chantier et interrogez-les en langage naturel grâce à l'IA. 4 modes de vue (grille, liste, arbre latéral, arbre accordéon), drag-and-drop, chat IA avec contexte documentaire (RAG), upload ZIP avec extraction automatique, OCR et indexation automatique.
+### Foncier — Prospection & acquisition foncière
+Pipeline de terrains avec statuts, données DVF et enrichissement parcellaire, lettres d'intention et compromis, fiche commune et conditions suspensives.
 
-### ImmoContrat — Gestion contractuelle pour l'immobilier
-Suivez vos contrats, phases, ordres de service et facturations en un seul endroit. Templates et clauses réutilisables, circuits de validation et signatures, alertes automatiques sur les échéances.
+### Bilan — Suivi financier & bilan promoteur
+Bilan promoteur normé (recettes, dépenses, marge), trésorerie et appels de fonds, simulations et scénarios, alertes de dépassement et suivi OAT.
 
-### ImmoRisk — Suivi financier et gestion des risques
-Bilans promoteur, trésorerie, alertes de dépassement. Bilans financiers avec postes, blocs et formules automatiques. Comparaison initial/engagé/réalisé, snapshots historiques, consolidation multi-projets.
+### Contrats — Gestion contractuelle
+Suivi des contrats, phases et avenants, ordres de service (OS) et ordres de facturation (OF), templates et clauses réutilisables, signatures électroniques dématérialisées.
+
+### Planning — Planification & suivi
+Diagramme de Gantt interactif, jalons et dépendances, baselines et comparaison de versions, alertes planning automatiques.
+
+### Documents — GED intelligente avec IA
+4 modes de vue (grille, liste, arbre, accordéon), chat IA contextuel (RAG), OCR et indexation automatique, upload ZIP avec classement automatique.
+
+### Commercial — Ventes & CRM acquéreurs
+Grille de prix dynamique, suivi des réservations et actes, documents commerciaux automatisés, simulations financières acquéreurs.
+
+## IA intégrée
+
+- RAG documentaire : recherche en langage naturel dans tous vos documents, avec les sources
+- OCR automatique : indexation des scans, fax et photos de chantier
+- Agent IA transversal : croise les informations entre modules (bilans, contrats, planning, documents)
 
 ## Fonctionnement
 
-1. Inscription gratuite — Créez votre compte en 30 secondes, sans carte bancaire.
-2. Configurez vos projets — Importez vos documents, paramétrez vos contrats, créez vos bilans.
-3. Pilotez votre activité — Tableaux de bord temps réel, alertes automatiques, IA à votre service.
+1. Demandez une démo — Rendez-vous personnalisé de 30 minutes, présentation sur vos cas concrets.
+2. Importez vos projets — Documents, bilans, paramétrage. La plateforme s'adapte à votre organisation.
+3. Pilotez vos opérations — Dashboards temps réel, alertes automatiques, IA à votre service.
 
 ## Tarification
 
-- Accès anticipé : Gratuit (places limitées). Accès complet aux 3 modules, IA documentaire incluse, projets illimités, support prioritaire du fondateur.
-
-## Technologies
-
-- React 19 + TypeScript (frontend)
-- Supabase — PostgreSQL + Auth + Storage (backend)
-- Cloudflare Pages (déploiement)
-- IA : RAG (Retrieval-Augmented Generation) + OCR
+- Sur devis, adapté à votre portefeuille de projets
+- 6 modules inclus, IA intégrée, stockage illimité, utilisateurs illimités, support prioritaire
+- Démonstration personnalisée sur rendez-vous
 
 ## Expertise
 
 - 17 ans d'expérience terrain en promotion immobilière
-- Secteurs : Promoteurs, Foncières, BTP, Gestionnaires de patrimoine, AMO
-
-## Ecosystème
-
-- [BeForBuild](https://beforbuild.com) — SaaS de gestion de projets immobiliers
-- [Buildoto](https://buildoto.com) — Audit & automatisation sur mesure pour l'immobilier
-- [Sébastien Mignot AMO](https://sebastien-mignot.com) — Assistance à Maîtrise d'Ouvrage
+- Secteur cible : promoteurs immobiliers, PME < 50 salariés, indépendants
 
 ## Liens
 
 - [Site principal](https://beforbuild.com)
 - [Application](https://app.beforbuild.com)
-- [LinkedIn](https://www.linkedin.com/in/sebastien-mignot/)
+- [Prendre rendez-vous](https://cal.com/sebastien-mignot/rendez-vous-decouverte-avec-beforbuild.com)
