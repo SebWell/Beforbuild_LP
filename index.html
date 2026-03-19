@@ -150,7 +150,9 @@
       background: none;
       border: none;
       cursor: pointer;
-      padding: 4px;
+      padding: 8px;
+      min-width: 44px;
+      min-height: 44px;
       color: var(--fg);
     }
 
@@ -241,6 +243,14 @@
       transition: background 0.15s;
     }
     .btn-outline:hover { background: var(--muted-bg); }
+
+    .btn-primary:focus-visible,
+    .btn-outline:focus-visible,
+    .faq-btn:focus-visible,
+    .hamburger:focus-visible {
+      outline: 2px solid var(--brand);
+      outline-offset: 2px;
+    }
 
     .badge {
       display: inline-flex;
@@ -525,7 +535,7 @@
     }
 
     .ia-section .section-header p {
-      color: hsl(0 0% 60%);
+      color: hsl(0 0% 75%);
     }
 
     .ia-features-grid {
@@ -565,7 +575,7 @@
 
     .ia-card-desc {
       font-size: 14px;
-      color: hsl(0 0% 60%);
+      color: hsl(0 0% 75%);
       line-height: 1.7;
     }
 
@@ -764,7 +774,7 @@
     }
 
     .cta-desc {
-      color: hsl(0 0% 70%);
+      color: hsl(0 0% 85%);
       font-size: 16px;
       margin-bottom: 32px;
       line-height: 1.7;
@@ -774,7 +784,7 @@
     .legal-toggle {
       font-size: 14px;
       font-weight: 500;
-      color: hsl(0 0% 70%);
+      color: hsl(0 0% 80%);
       cursor: pointer;
       padding: 10px 0;
       list-style: none;
@@ -789,7 +799,7 @@
       padding: 24px;
       margin-top: 12px;
       font-size: 14px;
-      color: hsl(0 0% 70%);
+      color: hsl(0 0% 80%);
       line-height: 1.7;
       background: hsl(0 0% 13%);
       border-radius: 8px;
@@ -801,7 +811,7 @@
       padding: 32px 0;
       text-align: center;
       font-size: 13px;
-      color: hsl(0 0% 52%);
+      color: hsl(0 0% 68%);
       line-height: 1.7;
     }
 
@@ -1069,7 +1079,7 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Navigation principale">
     <div class="navbar-inner">
       <a href="#" class="navbar-logo"><img src="photos/logo/beforbuild.webp" alt="BeForBuild" width="404" height="127"></a>
       <ul class="navbar-links">
@@ -1080,11 +1090,11 @@
         <li><a href="#contact">Contact</a></li>
         <li><a href="https://app.beforbuild.com" style="background: var(--brand); color: #fff; padding: 6px 16px; border-radius: 6px; font-weight: 600; transition: background 0.2s;">Se connecter</a></li>
       </ul>
-      <button class="hamburger" aria-label="Menu" aria-expanded="false">
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
     </div>
-    <div class="mobile-menu">
+    <div class="mobile-menu" id="mobile-menu">
       <a href="#modules">Modules</a>
       <a href="#ia">IA</a>
       <a href="#process">Comment ça marche</a>
@@ -1667,7 +1677,7 @@
               <strong style="color: var(--accent-fg);">Éditeur du site</strong> | BeForBuild &middot; Directeur de la publication : Sébastien Mignot &middot; Contact : contact@beforbuild.com &middot; Société en cours d'immatriculation en France.
             </p>
             <p style="margin: 0 0 12px;">
-              <strong style="color: var(--accent-fg);">Hébergement</strong> | Cloudflare Pages &middot; <a href="https://www.cloudflare.com/" style="color: hsl(0 0% 70%);" target="_blank" rel="noopener">cloudflare.com</a>
+              <strong style="color: var(--accent-fg);">Hébergement</strong> | Cloudflare Pages &middot; <a href="https://www.cloudflare.com/" style="color: hsl(0 0% 85%);" target="_blank" rel="noopener">cloudflare.com</a>
             </p>
             <p style="margin: 0; font-size: 13px;">
               <strong style="color: var(--accent-fg);">Propriété intellectuelle</strong> | L'ensemble des contenus présents sur ce site (textes, images, logos, etc.) sont la propriété exclusive de BeForBuild, sauf mention contraire. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site est interdite sans autorisation écrite préalable.
