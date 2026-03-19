@@ -1,4 +1,4 @@
-# BeForBuild — La plateforme digitale pour la promotion immobilière
+# BeForBuild — La plateforme digitale des promoteurs immobiliers
 
 > 6 modules métier pour les promoteurs immobiliers : Foncier, Bilan, Contrats, Planning, Documents, Commercial. IA intégrée, signature électronique, une seule plateforme.
 
