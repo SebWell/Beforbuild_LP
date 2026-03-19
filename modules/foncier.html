@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeForBuild — Logiciel de prospection foncière pour promoteurs immobiliers | Module Foncier</title>
+  <meta name="description" content="Logiciel de prospection foncière pour promoteurs immobiliers. Pipeline de terrains, données DVF, enrichissement parcellaire, lettres d'intention et compromis. Demandez une démo.">
+  <meta name="author" content="BeForBuild">
+  <link rel="canonical" href="https://beforbuild.com/modules/foncier.html">
+  <link rel="alternate" hreflang="fr" href="https://beforbuild.com/modules/foncier.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BeForBuild — Logiciel de prospection foncière pour promoteurs | Module Foncier">
+  <meta property="og:description" content="Logiciel de prospection foncière pour promoteurs immobiliers. Pipeline de terrains, données DVF, enrichissement parcellaire automatique.">
+  <meta property="og:url" content="https://beforbuild.com/modules/foncier.html">
+  <meta property="og:image" content="https://beforbuild.com/photos/og-image.png">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="BeForBuild">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BeForBuild — Logiciel de prospection foncière pour promoteurs | Module Foncier">
+  <meta name="twitter:description" content="Logiciel de prospection foncière pour promoteurs immobiliers. Pipeline de terrains, données DVF, enrichissement parcellaire automatique.">
+  <meta name="twitter:image" content="https://beforbuild.com/photos/og-image.png">
+
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#171717">
+
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="../favicon.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/png" href="../favicon-dark.png" media="(prefers-color-scheme: dark)">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --fg: hsl(0 0% 8%); --fg-light: hsl(0 0% 3.9%); --muted: hsl(0 0% 40%);
+      --muted-bg: hsl(0 0% 96.5%); --border: hsl(0 0% 88%); --bg: hsl(0 0% 100%);
+      --accent: hsl(0 0% 9%); --accent-fg: hsl(0 0% 98%);
+      --brand: #49D49D; --brand-dark: #3ab888; --brand-light: #e8f9f2;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: var(--fg); background: var(--bg); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 32px; }
+    .section { padding: 80px 0; }
+    .section-alt { background: var(--muted-bg); }
+    .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .navbar-inner { max-width: 1100px; margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .navbar-logo { display: flex; align-items: center; text-decoration: none; }
+    .navbar-logo img { height: 36px; width: auto; }
+    .navbar-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+    .navbar-links a { font-size: 14px; font-weight: 500; color: var(--muted); text-decoration: none; transition: color 0.15s; }
+    .navbar-links a:hover { color: var(--brand-dark); }
+    h1 { font-size: 42px; font-weight: 700; letter-spacing: -0.035em; line-height: 1.1; }
+    h2 { font-size: 32px; font-weight: 600; letter-spacing: -0.025em; line-height: 1.2; margin: 0; }
+    h3 { font-size: 20px; font-weight: 600; line-height: 1.3; margin: 0; }
+    .muted { color: var(--muted); }
+    .btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--brand); color: #fff; padding: 12px 24px; border-radius: 6px; font-size: 15px; font-weight: 600; border: none; cursor: pointer; text-decoration: none; font-family: inherit; transition: background 0.2s, box-shadow 0.2s; box-shadow: 0 1px 3px rgba(73, 212, 157, 0.3); }
+    .btn-primary:hover { background: var(--brand-dark); box-shadow: 0 4px 12px rgba(73, 212, 157, 0.35); }
+    .btn-outline { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: var(--fg); padding: 12px 24px; border-radius: 6px; font-size: 15px; font-weight: 500; border: 1px solid var(--border); cursor: pointer; text-decoration: none; font-family: inherit; transition: background 0.15s; }
+    .btn-outline:hover { background: var(--muted-bg); }
+    .hero-module { padding: 120px 0 80px; background: var(--muted-bg); }
+    .hero-module h1 { margin: 0 0 16px; }
+    .hero-module .subtitle { font-size: 20px; color: var(--brand-dark); font-weight: 500; margin-bottom: 16px; }
+    .hero-module .desc { color: var(--muted); font-size: 17px; max-width: 700px; line-height: 1.7; margin-bottom: 32px; }
+    .features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .feature-card { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 28px 24px; }
+    .feature-card h3 { margin-bottom: 8px; color: var(--fg); }
+    .feature-card p { font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .feature-icon { width: 44px; height: 44px; border-radius: 10px; background: var(--brand-light); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+    .feature-icon svg { color: var(--brand-dark); }
+    .faq-container { max-width: 800px; margin: 0 auto; }
+    .faq-group { display: flex; flex-direction: column; gap: 8px; }
+    .card { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+    .faq-btn { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 18px 20px; border: none; background: transparent; cursor: pointer; font-family: inherit; text-align: left; color: var(--fg); transition: background 0.15s; }
+    .faq-btn:hover { background: hsl(0 0% 98.5%); }
+    .faq-q { font-size: 15px; font-weight: 500; padding-right: 16px; }
+    .faq-body { display: none; padding: 0 20px 18px; font-size: 15px; color: var(--muted); line-height: 1.7; border-top: 1px solid hsl(0 0% 93%); padding-top: 16px; }
+    .accordion.open .faq-body { display: block; }
+    .chevron { flex-shrink: 0; transition: transform 0.2s; }
+    .accordion.open .chevron { transform: rotate(180deg); }
+    .cta-section { background: linear-gradient(135deg, hsl(0 0% 9%) 0%, hsl(155 45% 14%) 100%); padding: 80px 0; }
+    .cta-inner { text-align: center; max-width: 560px; margin: 0 auto; }
+    .cta-title { font-size: 32px; font-weight: 600; color: var(--accent-fg); letter-spacing: -0.025em; margin-bottom: 12px; }
+    .cta-desc { color: hsl(0 0% 85%); font-size: 16px; margin-bottom: 32px; line-height: 1.7; }
+    .site-footer { background: hsl(0 0% 6%); padding: 32px 0; text-align: center; font-size: 13px; color: hsl(0 0% 68%); line-height: 1.7; }
+    .modules-nav { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .modules-nav a { font-size: 14px; font-weight: 500; color: var(--brand-dark); text-decoration: none; padding: 6px 14px; border: 1px solid var(--brand); border-radius: 6px; transition: background 0.15s; }
+    .modules-nav a:hover { background: var(--brand-light); }
+    .modules-nav a.active { background: var(--brand); color: #fff; }
+    .section-header { margin-bottom: 40px; }
+    .section-header h2::after { content: ''; display: block; width: 40px; height: 3px; background: var(--brand); border-radius: 2px; margin-top: 12px; }
+    .section-header p { color: var(--muted); font-size: 16px; margin-top: 12px; max-width: 600px; line-height: 1.7; }
+    .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; min-width: 44px; min-height: 44px; color: var(--fg); }
+    .mobile-menu { display: none; position: fixed; top: 56px; left: 0; right: 0; background: rgba(255,255,255,0.98); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 16px 32px 24px; z-index: 99; }
+    .mobile-menu.open { display: block; }
+    .mobile-menu a { display: block; padding: 12px 0; font-size: 16px; font-weight: 500; color: var(--fg); text-decoration: none; border-bottom: 1px solid var(--border); }
+    .mobile-menu a:last-child { border-bottom: none; }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    @media (max-width: 768px) {
+      .navbar-links { display: none; } .hamburger { display: block; }
+      .container { padding: 0 20px; } .navbar-inner { padding: 0 20px; }
+      h1 { font-size: 28px; } h2 { font-size: 24px; }
+      .hero-module { padding: 88px 0 56px; }
+      .features-grid { grid-template-columns: 1fr; }
+      .section { padding: 48px 0; }
+      .cta-section { padding: 48px 0; } .cta-title { font-size: 24px; }
+      .modules-nav { gap: 8px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "BeForBuild — Module Foncier",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Logiciel de prospection foncière pour promoteurs immobiliers. Pipeline de terrains, données DVF, enrichissement parcellaire, lettres d'intention et compromis.",
+    "url": "https://beforbuild.com/modules/foncier.html",
+    "image": "https://beforbuild.com/photos/og-image.png",
+    "author": {
+      "@type": "Organization",
+      "name": "BeForBuild",
+      "url": "https://beforbuild.com"
+    },
+    "offers": {
+      "@type": "Offer",
+      "name": "BeForBuild Pro",
+      "description": "Tarification sur devis. Module Foncier inclus avec les 5 autres modules.",
+      "url": "https://beforbuild.com/#contact"
+    },
+    "featureList": [
+      "Pipeline de terrains avec statuts et suivi",
+      "Données DVF et enrichissement parcellaire automatique",
+      "Lettres d'intention et compromis de vente",
+      "Fiche commune et conditions suspensives",
+      "Documents fonciers centralisés",
+      "Recherche géographique et filtres avancés"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="navbar" aria-label="Navigation principale">
+    <div class="navbar-inner">
+      <a href="https://beforbuild.com" class="navbar-logo"><img src="../photos/logo/beforbuild.webp" alt="BeForBuild - Logiciel promoteur immobilier" width="404" height="127"></a>
+      <ul class="navbar-links">
+        <li><a href="https://beforbuild.com/#modules">Modules</a></li>
+        <li><a href="https://beforbuild.com/#ia">IA</a></li>
+        <li><a href="https://beforbuild.com/#pricing">Tarifs</a></li>
+        <li><a href="https://beforbuild.com/#contact">Contact</a></li>
+        <li><a href="https://app.beforbuild.com" style="background: var(--brand); color: #fff; padding: 6px 16px; border-radius: 6px; font-weight: 600; transition: background 0.2s;">Se connecter</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="https://beforbuild.com/#modules">Modules</a>
+      <a href="https://beforbuild.com/#ia">IA</a>
+      <a href="https://beforbuild.com/#pricing">Tarifs</a>
+      <a href="https://beforbuild.com/#contact">Contact</a>
+      <a href="https://app.beforbuild.com" style="background: var(--brand); color: #fff; padding: 10px 20px; border-radius: 6px; font-weight: 600;">Se connecter</a>
+    </div>
+  </nav>
+
+  <header class="hero-module">
+    <div class="container">
+      <div class="fade-in">
+        <a href="https://beforbuild.com" style="font-size: 14px; color: var(--muted); text-decoration: none; margin-bottom: 16px; display: inline-block;">&larr; Retour a l'accueil</a>
+        <h1>Logiciel de prospection foncière pour promoteurs immobiliers</h1>
+        <p class="subtitle">Module Foncier — Prospection &amp; acquisition foncière</p>
+        <p class="desc">
+          Structurez votre prospection foncière avec un pipeline visuel, des données DVF intégrées et un enrichissement parcellaire automatique. Suivez chaque opportunité de la détection à l'acte authentique, sans rien laisser passer.
+        </p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="https://cal.com/sebastien-mignot/rendez-vous-decouverte-avec-beforbuild.com" class="btn-primary">
+            Demander une démo
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="https://beforbuild.com/#modules" class="btn-outline">Voir tous les modules</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2>Fonctionnalités du module Foncier</h2>
+          <p>Tout ce dont un promoteur immobilier a besoin pour structurer sa prospection foncière et sécuriser ses acquisitions.</p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3>Pipeline de terrains avec statuts</h3>
+            <p>Visualisez toutes vos opportunités foncières dans un pipeline structuré. Chaque terrain est suivi avec son statut (prospect, en négociation, compromis signé, acte passé) et ses données clés : surface, prix, localisation, potentiel constructible. Fini les tableaux Excel dispersés entre les collaborateurs.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+            </div>
+            <h3>Données DVF et enrichissement parcellaire</h3>
+            <p>Accédez directement aux données de valeurs foncières (DVF) pour évaluer le prix du marché sur chaque zone. L'enrichissement parcellaire automatique vous fournit les informations cadastrales, PLU, surfaces et contraintes urbanistiques de chaque parcelle sans quitter la plateforme.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <h3>Lettres d'intention et compromis</h3>
+            <p>Rédigez et suivez vos lettres d'intention directement dans la plateforme. Transformez-les en compromis de vente avec un suivi des échéances, des conditions suspensives et des signataires. Chaque document est archivé et accessible à tout moment.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3>Conditions suspensives</h3>
+            <p>Listez et suivez chaque condition suspensive (permis de construire, purge des recours, financement, études de sol...) avec des échéances et des alertes automatiques. Ne laissez plus aucune CS passer entre les mailles du filet.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>Fiche commune</h3>
+            <p>Centralisez les informations de chaque commune : contacts mairie, PLU en vigueur, règles d'urbanisme, historique des interactions. Gagnez du temps en retrouvant instantanément toutes les données utiles pour vos dépôts de permis et vos négociations foncières.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>Documents fonciers centralisés</h3>
+            <p>Stockez tous les documents liés à vos terrains au même endroit : études de sol, diagnostics, plans cadastraux, courriers de mairie, offres. L'IA de BeForBuild indexe automatiquement chaque document pour une recherche instantanée en langage naturel.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2>Pourquoi digitaliser votre prospection foncière ?</h2>
+        </div>
+        <div style="max-width: 800px;">
+          <p style="font-size: 16px; color: var(--fg); line-height: 1.8; margin-bottom: 16px;">
+            La prospection foncière est le nerf de la guerre pour un promoteur immobilier. Pourtant, la plupart des promoteurs gèrent encore leurs opportunités sur Excel, avec des données dispersées entre les collaborateurs et aucune vision d'ensemble fiable.
+          </p>
+          <p style="font-size: 16px; color: var(--fg); line-height: 1.8; margin-bottom: 16px;">
+            Le module Foncier de BeForBuild centralise toute votre prospection dans un outil unique : pipeline visuel, données DVF en temps réel, enrichissement parcellaire automatique, suivi des lettres d'intention et compromis, gestion des conditions suspensives avec alertes.
+          </p>
+          <p style="font-size: 16px; color: var(--fg); line-height: 1.8;">
+            Résultat : vous ne ratez plus d'opportunité, vous accélérez vos acquisitions, et chaque collaborateur partage la même vision du portefeuille foncier. L'IA intégrée peut même croiser les données foncières avec vos bilans financiers pour évaluer la faisabilité d'une opération en quelques clics.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fade-in">
+      <div class="container">
+        <div class="faq-container">
+          <div class="section-header" style="text-align: center;">
+            <h2>Questions fréquentes — Module Foncier</h2>
+          </div>
+          <div class="faq-group accordion-group" data-group="faq">
+            <div class="card accordion">
+              <button class="faq-btn" aria-expanded="false">
+                <span class="faq-q">D'où viennent les données DVF ?</span>
+                <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-body">Les données DVF (Demandes de Valeurs Foncières) proviennent de la base officielle mise à disposition par la DGFiP. BeForBuild les intègre directement dans la plateforme pour que vous puissiez évaluer le prix du marché sur chaque zone sans quitter l'outil.</div>
+            </div>
+            <div class="card accordion">
+              <button class="faq-btn" aria-expanded="false">
+                <span class="faq-q">Comment fonctionne l'enrichissement parcellaire ?</span>
+                <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-body">Lorsque vous ajoutez un terrain, BeForBuild récupère automatiquement les données cadastrales, les informations PLU, les surfaces et les contraintes urbanistiques. Vous obtenez une fiche complète sans avoir à consulter plusieurs sites ou services.</div>
+            </div>
+            <div class="card accordion">
+              <button class="faq-btn" aria-expanded="false">
+                <span class="faq-q">Puis-je suivre les conditions suspensives avec des alertes ?</span>
+                <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-body">Oui. Chaque condition suspensive est enregistrée avec sa date d'échéance. BeForBuild vous envoie des alertes automatiques à l'approche des dates limites pour que vous ne manquiez aucune échéance critique.</div>
+            </div>
+            <div class="card accordion">
+              <button class="faq-btn" aria-expanded="false">
+                <span class="faq-q">Le module Foncier est-il connecté aux autres modules ?</span>
+                <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-body">Oui. Quand un terrain passe en phase d'acquisition, vous pouvez directement créer le projet associé et activer les modules Bilan (pour la faisabilité financière), Contrats (pour les marchés), Planning (pour le phasage), Documents (pour la GED) et Commercial (pour la grille de prix). Les données circulent entre les modules.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt fade-in">
+      <div class="container">
+        <h2 style="margin-bottom: 16px;">Découvrir les autres modules</h2>
+        <div class="modules-nav">
+          <a href="foncier.html" class="active">Foncier</a>
+          <a href="bilan.html">Bilan</a>
+          <a href="contrats.html">Contrats</a>
+          <a href="planning.html">Planning</a>
+          <a href="documents.html">Documents</a>
+          <a href="commercial.html">Commercial</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section fade-in">
+      <div class="container">
+        <div class="cta-inner">
+          <h2 class="cta-title">Structurez votre prospection foncière</h2>
+          <p class="cta-desc">Demandez une démonstration personnalisée du module Foncier et découvrez comment BeForBuild peut transformer votre prospection.</p>
+          <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+            <a href="https://cal.com/sebastien-mignot/rendez-vous-decouverte-avec-beforbuild.com" class="btn-primary">
+              Demander une démo
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="mailto:contact@beforbuild.com?subject=Module%20Foncier%20-%20Prise%20de%20contact" class="btn-outline" style="border-color: hsl(0 0% 40%); color: var(--accent-fg);">
+              Nous contacter
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      BeForBuild | Société en cours d'immatriculation en France
+      <br>
+      &copy; 2025 BeForBuild. Tous droits réservés.
+    </div>
+  </footer>
+
+  <script>
+    var hamburger = document.querySelector('.hamburger');
+    var mobileMenu = document.querySelector('.mobile-menu');
+    hamburger.addEventListener('click', function() {
+      var isOpen = mobileMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+    mobileMenu.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() { mobileMenu.classList.remove('open'); hamburger.setAttribute('aria-expanded', 'false'); });
+    });
+    document.querySelectorAll('.accordion-group').forEach(function(group) {
+      group.querySelectorAll('.faq-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var item = btn.closest('.accordion');
+          var wasOpen = item.classList.contains('open');
+          group.querySelectorAll('.accordion').forEach(function(a) { a.classList.remove('open'); });
+          if (!wasOpen) item.classList.add('open');
+        });
+      });
+    });
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.fade-in').forEach(function(el) { observer.observe(el); });
+  </script>
+
+</body>
+</html>

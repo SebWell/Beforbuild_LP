@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BeForBuild | La plateforme digitale des promoteurs immobiliers</title>
-  <meta name="description" content="6 modules métier pour les promoteurs immobiliers : Foncier, Bilan, Contrats, Planning, Documents, Commercial. IA intégrée, une seule plateforme. Sur devis.">
+  <title>BeForBuild — Logiciel Promoteur Immobilier | 6 Modules + IA</title>
+  <meta name="description" content="Logiciel tout-en-un pour promoteurs immobiliers : Foncier, Bilan, Contrats, Planning, Documents, Commercial. IA intégrée, signature électronique. Demandez une démo.">
   <meta name="author" content="BeForBuild">
   <link rel="canonical" href="https://beforbuild.com">
+  <link rel="alternate" hreflang="fr" href="https://beforbuild.com">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="BeForBuild | La plateforme digitale des promoteurs immobiliers">
-  <meta property="og:description" content="6 modules métier pour les promoteurs immobiliers : Foncier, Bilan, Contrats, Planning, Documents, Commercial. IA intégrée. Sur devis.">
+  <meta property="og:title" content="BeForBuild — Logiciel Promoteur Immobilier | 6 Modules + IA">
+  <meta property="og:description" content="Logiciel promoteur immobilier tout-en-un. 6 modules métier, IA intégrée, signature électronique. Demandez une démo.">
   <meta property="og:url" content="https://beforbuild.com">
   <meta property="og:image" content="https://beforbuild.com/photos/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -21,8 +22,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="BeForBuild | La plateforme digitale des promoteurs immobiliers">
-  <meta name="twitter:description" content="6 modules métier pour les promoteurs immobiliers : Foncier, Bilan, Contrats, Planning, Documents, Commercial. IA intégrée. Sur devis.">
+  <meta name="twitter:title" content="BeForBuild — Logiciel Promoteur Immobilier | 6 Modules + IA">
+  <meta name="twitter:description" content="Logiciel promoteur immobilier tout-en-un. 6 modules métier, IA intégrée, signature électronique. Demandez une démo.">
   <meta name="twitter:image" content="https://beforbuild.com/photos/og-image.png">
 
   <!-- SEO -->
@@ -454,6 +455,10 @@
       border-radius: 8px;
       padding: 28px 24px;
       transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
 
     .module-card:hover {
@@ -519,6 +524,7 @@
       padding-top: 12px;
       border-top: 1px solid var(--border);
     }
+
 
     /* -- IA SECTION -- */
     .ia-section {
@@ -1005,11 +1011,34 @@
         ]
       },
       {
+        "@type": "Organization",
+        "name": "BeForBuild",
+        "url": "https://beforbuild.com",
+        "logo": "https://beforbuild.com/photos/logo/beforbuild.webp",
+        "founder": { "@id": "#sebastien-mignot" },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "contact@beforbuild.com",
+          "contactType": "sales"
+        },
+        "areaServed": { "@type": "Country", "name": "France" }
+      },
+      {
         "@type": "Person",
         "@id": "#sebastien-mignot",
         "name": "Sébastien Mignot",
-        "jobTitle": "Fondateur | BeForBuild",
-        "url": "https://beforbuild.com"
+        "jobTitle": "Fondateur",
+        "worksFor": { "@type": "Organization", "name": "BeForBuild" },
+        "knowsAbout": ["promotion immobilière", "gestion de projets immobiliers", "bilan promoteur"],
+        "description": "17 ans d'expérience en promotion immobilière (Nexity, Groupe Cardinal, Crédit Mutuel Immobilier)"
+      },
+      {
+        "@type": "VideoObject",
+        "name": "BeForBuild — Présentation",
+        "description": "Découverte du logiciel BeForBuild pour les promoteurs immobiliers",
+        "contentUrl": "https://beforbuild.com/teaser.mp4",
+        "thumbnailUrl": "https://beforbuild.com/photos/og-image.png",
+        "uploadDate": "2026-03-18"
       },
       {
         "@type": "FAQPage",
@@ -1081,7 +1110,7 @@
   <!-- NAVBAR -->
   <nav class="navbar" aria-label="Navigation principale">
     <div class="navbar-inner">
-      <a href="#" class="navbar-logo"><img src="photos/logo/beforbuild.webp" alt="BeForBuild" width="404" height="127"></a>
+      <a href="https://beforbuild.com" class="navbar-logo"><img src="photos/logo/beforbuild.webp" alt="BeForBuild - Logiciel promoteur immobilier" width="404" height="127"></a>
       <ul class="navbar-links">
         <li><a href="#modules">Modules</a></li>
         <li><a href="#ia">IA</a></li>
@@ -1110,7 +1139,7 @@
       <div class="fade-in" style="display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: center;">
         <div class="hero-content">
           <span class="badge">Plateforme SaaS &middot; 6 modules &middot; IA intégrée</span>
-          <h1>La plateforme digitale des promoteurs immobiliers</h1>
+          <h1>Le logiciel tout-en-un des promoteurs immobiliers</h1>
           <p class="hero-subtitle">6 modules métier, une seule plateforme, l'IA en renfort.</p>
           <p class="hero-desc">
             Foncier, Bilan, Contrats, Planning, Documents, Commercial &mdash; fini les Excel et les outils disjoints. Tout ce dont un promoteur a besoin pour piloter ses opérations, dans une seule plateforme.
@@ -1127,7 +1156,7 @@
           </div>
         </div>
         <div class="hero-photo-wrap">
-          <img src="photos/logo/beforbuild.webp" alt="BeForBuild" style="width: 280px; height: auto;">
+          <img src="photos/logo/beforbuild.webp" alt="BeForBuild - Logiciel promoteur immobilier" style="width: 280px; height: auto;">
         </div>
       </div>
       <div class="stats-grid fade-in">
@@ -1162,7 +1191,7 @@
     <section class="section fade-in">
       <div class="container">
         <div class="section-header">
-          <h2>Des défis que nous connaissons bien</h2>
+          <h2>Les défis des promoteurs immobiliers</h2>
           <p>En promotion immobilière, certains sujets méritent de meilleurs outils. BeForBuild les adresse un par un.</p>
         </div>
         <div class="painpoints-grid">
@@ -1319,7 +1348,7 @@
     <section id="modules" class="section section-modules-bg fade-in">
       <div class="container">
         <div class="section-header">
-          <h2>Les 6 modules</h2>
+          <h2>6 modules métier pour la promotion immobilière</h2>
           <p>
             Du foncier à la commercialisation : chaque étape de l'opération est couverte. Les modules fonctionnent ensemble sur une base de projets partagée.
           </p>
@@ -1328,11 +1357,11 @@
         <div class="modules-grid-6">
 
           <!-- Foncier -->
-          <div class="module-card">
+          <a href="modules/foncier.html" class="module-card">
             <div class="module-icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
-            <div class="module-name">Foncier</div>
+            <h3 class="module-name">Foncier</h3>
             <div class="module-subtitle">Prospection &amp; acquisition foncière</div>
             <ul class="module-features">
               <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Pipeline de terrains avec statuts</span></li>
@@ -1341,14 +1370,14 @@
               <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Fiche commune et conditions suspensives</span></li>
             </ul>
             <div class="module-benefit">Structurez votre prospection, ne ratez plus une opportunité.</div>
-          </div>
+          </a>
 
           <!-- Bilan -->
-          <div class="module-card">
+          <a href="modules/bilan.html" class="module-card">
             <div class="module-icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
             </div>
-            <div class="module-name">Bilan</div>
+            <h3 class="module-name">Bilan</h3>
             <div class="module-subtitle">Suivi financier &amp; bilan promoteur</div>
             <ul class="module-features">
               <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Bilan promoteur normé (recettes, dépenses, marge)</span></li>
@@ -1357,14 +1386,14 @@
               <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Alertes de dépassement et suivi OAT</span></li>
             </ul>
             <div class="module-benefit">Fini les bilans Excel. Visibilité financière en temps réel.</div>
-          </div>
+          </a>
 
           <!-- Contrats -->
-          <div class="module-card">
+          <a href="modules/contrats.html" class="module-card">
             <div class="module-icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
             </div>
-            <div class="module-name">Contrats</div>
+            <h3 class="module-name">Contrats</h3>
             <div class="module-subtitle">Gestion contractuelle</div>
             <ul class="module-features">
               <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Suivi des contrats, phases et avenants</span></li>
@@ -1373,14 +1402,14 @@
               <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Signatures dématérialisées</span></li>
             </ul>
             <div class="module-benefit">Zero échéance oubliee. Tracabilite complete.</div>
-          </div>
+          </a>
 
           <!-- Planning -->
-          <div class="module-card">
+          <a href="modules/planning.html" class="module-card">
             <div class="module-icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             </div>
-            <div class="module-name">Planning</div>
+            <h3 class="module-name">Planning</h3>
             <div class="module-subtitle">Planification &amp; suivi</div>
             <ul class="module-features">
               <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Diagramme de Gantt interactif</span></li>
@@ -1389,14 +1418,14 @@
               <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Alertes planning automatiques</span></li>
             </ul>
             <div class="module-benefit">Vision partagée du planning. Plus de jalons oubliés.</div>
-          </div>
+          </a>
 
           <!-- Documents -->
-          <div class="module-card">
+          <a href="modules/documents.html" class="module-card">
             <div class="module-icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
             </div>
-            <div class="module-name">Documents</div>
+            <h3 class="module-name">Documents</h3>
             <div class="module-subtitle">Gestion documentaire intelligente</div>
             <ul class="module-features">
               <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>4 modes de vue (grille, liste, arbre, accordeon)</span></li>
@@ -1405,14 +1434,14 @@
               <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Upload ZIP avec classement auto</span></li>
             </ul>
             <div class="module-benefit">Tous vos documents au même endroit. Recherche instantanée par l'IA.</div>
-          </div>
+          </a>
 
           <!-- Commercial -->
-          <div class="module-card">
+          <a href="modules/commercial.html" class="module-card">
             <div class="module-icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             </div>
-            <div class="module-name">Commercial</div>
+            <h3 class="module-name">Commercial</h3>
             <div class="module-subtitle">Ventes &amp; CRM acquéreurs</div>
             <ul class="module-features">
               <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Grille de prix dynamique</span></li>
@@ -1421,7 +1450,7 @@
               <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Simulations financières acquéreurs</span></li>
             </ul>
             <div class="module-benefit">Pilotez vos ventes. Fini la grille Excel.</div>
-          </div>
+          </a>
 
         </div>
       </div>
@@ -1431,7 +1460,7 @@
     <section id="ia" class="ia-section fade-in">
       <div class="container">
         <div class="section-header">
-          <h2>L'IA qui connaît vos projets</h2>
+          <h2>Intelligence artificielle pour la promotion immobilière</h2>
           <p>Pas une IA générique. Une IA contextuelle qui accède à vos documents, vos bilans, vos contrats &mdash; et qui comprend la promotion immobilière.</p>
         </div>
 
@@ -1499,7 +1528,7 @@
     <section id="process" class="section section-alt fade-in">
       <div class="container">
         <div class="section-header">
-          <h2>Comment ça marche</h2>
+          <h2>Comment digitaliser votre promotion immobilière</h2>
         </div>
         <div class="process-grid">
           <div class="process-card">
@@ -1540,7 +1569,7 @@
     <section id="pricing" class="section fade-in">
       <div class="container">
         <div class="section-header" style="text-align: center;">
-          <h2>Tarification</h2>
+          <h2>Tarification logiciel promoteur immobilier</h2>
         </div>
 
         <div class="packs-grid" style="max-width: 500px;">
@@ -1576,7 +1605,7 @@
       <div class="container">
         <div class="faq-container">
           <div class="section-header" style="text-align: center;">
-            <h2>Questions fréquentes</h2>
+            <h2>Questions fréquentes — Logiciel promoteur immobilier</h2>
           </div>
 
           <div class="faq-group accordion-group" data-group="faq">
