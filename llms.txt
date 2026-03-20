@@ -64,8 +64,18 @@ Grille de prix dynamique, suivi des réservations et actes, documents commerciau
 - 17 ans d'expérience terrain en promotion immobilière
 - Secteur cible : promoteurs immobiliers, PME < 50 salariés, indépendants
 
+## API & Connectivité
+
+- API REST complète : toutes les données accessibles via `https://api.beforbuild.com`
+- Serveur MCP (Model Context Protocol) : `https://mcp.beforbuild.com/mcp` — permet à tout agent IA compatible (Claude, GPT, Copilot) d'interroger et piloter BeForBuild
+- Authentification : session token opaque (JWT échangé côté serveur, jamais exposé au LLM)
+- 8 outils MCP : list_records, get_record, create_record, update_record, delete_record, call_function, list_modules, auth_login
+- 7 modules de données : public, foncier, bilan, contrats, planning, commercial, documents
+
 ## Liens
 
 - [Site principal](https://beforbuild.com)
 - [Application](https://app.beforbuild.com)
+- [Serveur MCP](https://mcp.beforbuild.com/health)
+- [API](https://api.beforbuild.com)
 - [Prendre rendez-vous](https://cal.com/sebastien-mignot/rendez-vous-decouverte-avec-beforbuild.com)
