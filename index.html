@@ -599,6 +599,12 @@
       background: var(--bg);
     }
 
+    .api-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
     .process-num {
       width: 40px;
       height: 40px;
@@ -957,6 +963,10 @@
         max-width: none;
       }
 
+      .api-grid {
+        grid-template-columns: 1fr;
+      }
+
       .packs-grid {
         grid-template-columns: 1fr;
         max-width: none;
@@ -1030,7 +1040,7 @@
         "jobTitle": "Fondateur",
         "worksFor": { "@type": "Organization", "name": "BeForBuild" },
         "knowsAbout": ["promotion immobilière", "gestion de projets immobiliers", "bilan promoteur"],
-        "description": "17 ans d'expérience en promotion immobilière (Nexity, Groupe Cardinal, Crédit Mutuel Immobilier)"
+        "description": "17 ans d'expérience en promotion immobilière en tant que responsable de programme"
       },
       {
         "@type": "VideoObject",
@@ -1322,8 +1332,8 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--brand-dark);"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
               </div>
               <div>
-                <div class="why-arg-title">Conçue par un promoteur, pour les promoteurs</div>
-                <div class="why-arg-desc">17 ans chez Nexity, Groupe Cardinal, Crédit Mutuel Immobilier. Chaque écran, chaque workflow est né d'un besoin vécu sur le terrain.</div>
+                <div class="why-arg-title">Conçue par un responsable de programme, pour les promoteurs</div>
+                <div class="why-arg-desc">17 ans d'expérience en promotion immobilière. Chaque écran, chaque workflow est né d'un besoin vécu sur le terrain.</div>
               </div>
             </div>
           </div>
@@ -1499,7 +1509,7 @@
           <p>BeForBuild n'est pas une boîte noire. Votre écosystème se branche directement dessus.</p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+        <div class="api-grid">
 
           <div class="process-card" style="display: flex; gap: 16px; align-items: flex-start;">
             <div style="flex-shrink: 0; width: 44px; height: 44px; border-radius: 10px; background: var(--brand-light); display: flex; align-items: center; justify-content: center;">

@@ -2,7 +2,7 @@
 
 > 6 modules métier pour les promoteurs immobiliers : Foncier, Bilan, Contrats, Planning, Documents, Commercial. IA intégrée, signature électronique, une seule plateforme.
 
-BeForBuild est une plateforme SaaS pour les promoteurs immobiliers. Elle couvre l'ensemble du cycle d'une opération avec 6 modules interconnectés : Foncier, Bilan, Contrats, Planning, Documents et Commercial. Créée par Sébastien Mignot, fort de 17 ans d'expérience en promotion immobilière (Nexity, Groupe Cardinal, Crédit Mutuel Immobilier). Société en cours d'immatriculation en France.
+BeForBuild est une plateforme SaaS pour les promoteurs immobiliers. Elle couvre l'ensemble du cycle d'une opération avec 6 modules interconnectés : Foncier, Bilan, Contrats, Planning, Documents et Commercial. Créée par Sébastien Mignot, fort de 17 ans d'expérience en promotion immobilière en tant que responsable de programme. Société en cours d'immatriculation en France.
 
 ## Profil
 
