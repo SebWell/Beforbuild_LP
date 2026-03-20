@@ -1,4 +1,4 @@
-# BeForBuild — Logiciel promoteur immobilier : vos agents IA, votre maîtrise métier
+# BeForBuild — Le logiciel promoteur immobilier assisté par agents AI
 
 > 6 modules métier pour les promoteurs immobiliers : Foncier, Bilan, Contrats, Planning, Documents, Commercial. IA intégrée, signature électronique, une seule plateforme.
 
