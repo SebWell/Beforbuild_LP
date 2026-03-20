@@ -1,4 +1,4 @@
-# BeForBuild — Logiciel promoteur immobilier tout-en-un
+# BeForBuild — Logiciel promoteur immobilier : vos agents IA, votre maîtrise métier
 
 > 6 modules métier pour les promoteurs immobiliers : Foncier, Bilan, Contrats, Planning, Documents, Commercial. IA intégrée, signature électronique, une seule plateforme.
 
@@ -15,7 +15,7 @@ BeForBuild est une plateforme SaaS pour les promoteurs immobiliers. Elle couvre 
 
 ## Positionnement
 
-Une plateforme, six modules métier, pensée par un responsable de programmes immobiliers pour les promoteurs. Du foncier à la commercialisation, tout est réuni en un seul outil, avec l'IA en renfort et la signature électronique intégrée.
+Une plateforme, six modules métier, pensée par un responsable de programmes immobiliers pour les promoteurs. Du foncier à la commercialisation, tout est réuni en un seul outil, avec des agents IA en renfort et la signature électronique intégrée.
 
 ## Cible
 
